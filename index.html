@@ -4,21 +4,41 @@
     <!-- meta -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-<link rel="icon" type="image/x-icon" href="/images/giblog-logo.png">
+<link rel="icon" type="image/x-icon" href="/images/kimoto-system-favicon.png">
 <link rel="stylesheet" type="text/css" href="/css/common.css">
 
-<title>mysite😄</title>
-<meta name="description" content="How to use Giblog.">
+<script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+<link  type="text/css" rel="stylesheet" href="/js/google-code-prettify/prettify.css"/>
+<script>
+  $(function(){
+    // google code prettifyの有効化
+    $("pre").addClass("prettyprint");
+    function init(event){
+      prettyPrint();
+    }
+    if(window.addEventListener)window.addEventListener("load",init,false);
+    else if(window.attachEvent)window.attachEvent("onload",init);
+    
+    $(".to-top").click(function() {
+      // ページの一番上までスクロールさせます。
+      $('body, html').animate({scrollTop: 0}, 300, 'linear');;
+    });
+  });
+</script>
+
+<title>木本システム株式会社</title>
   </head>
   <body>
     <div class="container">
       <div class="header">
         <!-- header -->
-<div class="main">
-  <h1>
-    <a href="/">Giblog Web Site</a>
-  </h1>
-</div>
+<h1>
+  <a href="/"><img src="/images/kimoto-system-logo.png"></a>
+</h1>
+<ul>
+  <li><a href="/corporate.html"><img src="/images/header/corporate-icon.png">会社情報</a></li>
+</ul>
 
       </div>
       <div class="main">
@@ -29,94 +49,10 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/">How to use Giblog😁</a></h2>
-<p>
-  How to use Giblog.
-</p>
-<h3>Create web site</h3>
-<p>
-  Create web site by new command.
-</p>
-<pre>
-giblog new mysite
-</pre>
-<p>
-  Other prototypes is also available.
-</p>
-<pre>
-giblog new_website mysite
-giblog new_blog mysite
-</pre>
-<p>
-  After creating web site, change directory to mysite
-</p>
-<pre>
-cd mysite
-</pre>
-<h3>Add new entry</h3>
-<p>
-  Add new entry by add command.
-</p>
-<pre>
-giblog add
-</pre>
-<h3>Build</h3>
-<p>
-  Build web site.
-</p>
-<pre>
-giblog build
-</pre>
-<p>
-  If you want to customize build process, you open lib/Giblog/Command/Build.pm and edit run subroutine.
-</p>
-<h3>Serve</h3>
-<p>
-  You can serve your web site by morbo command if you have Mojolicious.
-</p>
-<pre>
-morbo serve.pl
-</pre>
-<p>
-  build command is automatically executed after editting files in templates directory.
-</p>
-<h3>Examples</h3>
-<p>
-  Some examples.
-</p>
-<blockquote>
-  This is a quote.
-</blockquote>
-<div>
-  Hello
-</div>
-<h4>Sub header</h4>
-<pre>
-&lt;&gt;&lt;&gt;&lt;&gt;
-</pre>
-<pre>
-1 &gt; 2;
-1 &lt; 3;
-1 &amp; 3;
-</pre>
-<ul>
-  <li>Item1</li>
-  <li>Item2</li>
-  <li>Item3</li>
-</ul>
-<table>
-  <tr>
-    <th>Head1</th><th>Head2</th>
-  </tr>
-  <tr>
-    <td>Item1</td><td>Item2</td>
-  </tr>
-</table>
-<p>
-  <a href="https://github.com/yuki-kimoto/giblog">Giblog</a>
-</p>
-<div>
-  <img src="/images/giblog-logo.png">
+    <div style="background:#2E75B6;color:white;text-align:center;font-size:20px;padding:50px 0;">
+  Webサイトデザインからサーバー運用までのトータルサポート<br>
+  作業効率化のための業務システムの開発<br>
+  社内エンジニア向けシステム運用支援<br>
 </div>
 
   </div>
@@ -129,22 +65,14 @@ morbo serve.pl
         </div>
         <div class="side">
           <!-- side -->
-<div class="side-list">
-  <div class="side-list-title">
-    Side Bar
-  </div>
-  <ul>
-    <li><a href="/list.html">Entries</a></li>
-    <li>Bar</li>
-    <li>Baz</li>
-  </ul>
-</div>
 
         </div>
       </div>
       <div class="footer">
         <!-- footer -->
-<a href="https://github.com/yuki-kimoto/giblog">Giblog</a>
+<ul>
+  <li><a href="/corporate.html">会社情報</a></li>
+</ul>
 
       </div>
     </div>

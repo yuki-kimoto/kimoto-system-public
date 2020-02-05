@@ -4,21 +4,42 @@
     <!-- meta -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-<link rel="icon" type="image/x-icon" href="/images/giblog-logo.png">
+<link rel="icon" type="image/x-icon" href="/images/kimoto-system-favicon.png">
 <link rel="stylesheet" type="text/css" href="/css/common.css">
 
-<title>Hello Giblog 6 - mysite😄</title>
+<script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+<link  type="text/css" rel="stylesheet" href="/js/google-code-prettify/prettify.css"/>
+<script>
+  $(function(){
+    // google code prettifyの有効化
+    $("pre").addClass("prettyprint");
+    function init(event){
+      prettyPrint();
+    }
+    if(window.addEventListener)window.addEventListener("load",init,false);
+    else if(window.attachEvent)window.attachEvent("onload",init);
+    
+    $(".to-top").click(function() {
+      // ページの一番上までスクロールさせます。
+      $('body, html').animate({scrollTop: 0}, 300, 'linear');;
+    });
+  });
+</script>
+
+<title>Hello Giblog 6 - 木本システム株式会社</title>
 <meta name="description" content="Hello Giblog 6.">
   </head>
   <body>
     <div class="container">
       <div class="header">
         <!-- header -->
-<div class="main">
-  <h1>
-    <a href="/">Giblog Web Site</a>
-  </h1>
-</div>
+<h1>
+  <a href="/"><img src="/images/kimoto-system-logo.png"></a>
+</h1>
+<ul>
+  <li><a href="/corporate.html"><img src="/images/header/corporate-icon.png">会社情報</a></li>
+</ul>
 
       </div>
       <div class="main">
@@ -44,22 +65,14 @@
         </div>
         <div class="side">
           <!-- side -->
-<div class="side-list">
-  <div class="side-list-title">
-    Side Bar
-  </div>
-  <ul>
-    <li><a href="/list.html">Entries</a></li>
-    <li>Bar</li>
-    <li>Baz</li>
-  </ul>
-</div>
 
         </div>
       </div>
       <div class="footer">
         <!-- footer -->
-<a href="https://github.com/yuki-kimoto/giblog">Giblog</a>
+<ul>
+  <li><a href="/corporate.html">会社情報</a></li>
+</ul>
 
       </div>
     </div>
