@@ -114,17 +114,33 @@
     font-size:14px;
     font-weight:bold;
   }
-  h2 {
-    font-size:28px;
-    margin:7px 0 12px 0;
+  .corporate h2 {
+    font-size:32px;
+    margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
+    background-image:url(/images/corporate/corporate-image.jpg);
+    background-position:50% 50%;
+    color:white;
+    height:300px;
+    padding-top:140px;
   }
-  h2 a, h2 a:visited {
+  .corporate h2 a, .corporate h2 a:visited {
     text-decoration:none;
-    color:#000;
   }
+  .corporate_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #4B5F97;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+
   h3 {
     font-size:21px;
     padding:16px 0px 15px 18px;
@@ -167,11 +183,12 @@
     margin:10px 0;
     line-height:1.5;
   }
-
-  table {
+  
+  /* 会社情報 */
+  .corporate table {
     border-collapse: collapse;
     margin-left:15px;
-    width:calc(100% - 30px);
+    width:100%;
     max-width:960px;
     margin-left:auto;
     margin-right:auto;
@@ -180,13 +197,13 @@
     margin-top:50px;
   }
   
-  table tr {
+  .corporate table tr {
     border:1px solid #83b0de;
     border-right:none;
     border-left:none;
   }
 
-  table th {
+  .corporate table th {
     padding:7px;
     background:#dbedff;
     font-weight:bold;
@@ -195,9 +212,17 @@
     color:#000;
   }
 
-  table td {
+  .corporate table td {
     padding:7px;
     padding:20px 20px;
+  }
+  
+  /* アクセス */
+  .access-container {
+    width:calc(100% - 30px);
+    max-width:960px;
+    margin-left:auto;
+    margin-right:auto;
   }
   
   /* advanced */
