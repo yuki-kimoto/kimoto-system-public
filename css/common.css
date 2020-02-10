@@ -29,7 +29,7 @@
   
   /* footer */
   .footer {
-    background:#F2F2F2;
+    background:#1A1A1A;
     text-align:center;
     padding:15px 0;
     border-top:1px solid #ccc;
@@ -141,8 +141,8 @@
     font-size:16px;
   }
 
-  h3 {
-    font-size:21px;
+  .corporate h3 {
+    font-size:26px;
     padding:16px 0px 15px 18px;
     letter-spacing:0.5px;
     margin:15px 0 10px 0;
@@ -150,19 +150,18 @@
     color:#3c3c33;
     text-align:center;
   }
-  h4 {
+  .corporate h4 {
     font-size:18px;
     font-weight:bold;
     padding:6px 0px 4px 5px;
     letter-spacing:0.5px;
-    margin:15px 0 18px 0;
-    border-bottom:dashed 1px #ddd;
+    margin:15px 0 5px 0;
   }
-  p {
+  .corporate p {
     font-size:16px;
     color:#111;
-    margin:15px 0;
-    line-height:1.5;
+    margin:5px 0;
+    line-height:1.9;
   }
   pre {
     font-size:16px;
@@ -189,7 +188,7 @@
     border-collapse: collapse;
     margin-left:15px;
     width:100%;
-    max-width:960px;
+    max-width:1080px;
     margin-left:auto;
     margin-right:auto;
     font-size:15px;
@@ -220,7 +219,7 @@
   /* アクセス */
   .access-container {
     width:calc(100% - 30px);
-    max-width:960px;
+    max-width:1080px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -314,7 +313,7 @@
     font-size:18px;
   }
 /* Tablet and Smart phone */
-@media only screen and (max-width:960px) {
+@media only screen and (max-width:1080px) {
   .content {
     margin:0;
     padding:0;
