@@ -5,7 +5,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    -webkit-text-size-adjust:100%;
     list-style:none;
   }
   body {
@@ -50,10 +49,6 @@
   /* entry */
   .entry {
     background:white;
-  }
-  .entry li {
-    margin-left:25px;
-    line-height:1.5;
   }
   
   /* side */
@@ -123,6 +118,133 @@
   .header_menu a:hover {
     opacity:0.8;
   }
+
+  /* サービス */
+  .services h2 {
+    font-size:32px;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-image:url(/images/services/services-image.jpg);
+    background-position:50% 50%;
+    color:white;
+    height:300px;
+    padding-top:140px;
+  }
+  .services h2 a, .services h2 a:visited {
+    text-decoration:none;
+  }
+  .services_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+
+  .services h3 {
+    font-size:26px;
+    padding:16px 0px 15px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    margin-top:40px;
+    color:#3c3c33;
+    text-align:center;
+  }
+  .services h4 {
+    font-size:18px;
+    font-weight:bold;
+    padding:6px 0px 4px 5px;
+    letter-spacing:0.5px;
+    margin:15px 0 5px 0;
+  }
+  .services p {
+    font-size:16px;
+    color:#111;
+    margin:5px 0;
+    line-height:1.9;
+  }
+
+  .services h2 {
+    font-size:32px;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-image:url(/images/services/services-image.jpg);
+    background-position:50% 50%;
+    color:white;
+    height:300px;
+    padding-top:140px;
+  }
+  .services h2 a, .services h2 a:visited {
+    text-decoration:none;
+  }
+  .services_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+
+  .services h3 {
+    font-size:26px;
+    padding:16px 0px 15px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    margin-top:40px;
+    color:#3c3c33;
+    text-align:center;
+  }
+  
+  .services ul {
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .services li {
+    width:50%;
+    border:1px solid #ddd;
+  }
+  .services li a {
+    display:block;
+    width:100%;
+    padding:10px;
+    color:#33f;
+    height:100%;
+    color:#2F2F22;
+  }
+  .services li a:hover {
+    opacity:0.8;
+  }
+  .services li img {
+    vertical-align:-17px;
+    margin-right:10px;
+  }
+  .services li:nth-child(odd) {
+    border-bottom:none;
+  }
+  .services li:nth-child(even) {
+    border-left:none;
+    border-bottom:none;
+  }
+  .services li:nth-last-child(2) {
+    border-bottom:1px solid #ddd;
+  }
+  .services li:last-child {
+    border-bottom:1px solid #ddd;
+  }
+  
+  /* 会社情報 */
   .corporate h2 {
     font-size:32px;
     margin:0;
@@ -142,7 +264,7 @@
     text-align:center;
     color:white;
     font-weight:bold;
-    background: #4B5F97;
+    background: #1E65A6;
     background-size:4px 4px;
     padding:13px 0;
     letter-spacing:1px;
@@ -172,26 +294,57 @@
     margin:5px 0;
     line-height:1.9;
   }
-  pre {
-    font-size:16px;
-    background:#FCFCFC;
-    border:1px solid #CCCCCC;
-    border-radius:5px;
-    padding:10px 15px;
-    margin:10px 0;
-    line-height:1.2;
-    white-space:pre-wrap;
+
+  .corporate h2 {
+    font-size:32px;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-image:url(/images/corporate/corporate-image.jpg);
+    background-position:50% 50%;
+    color:white;
+    height:300px;
+    padding-top:140px;
   }
-  blockquote {
-    font-size:16px;
-    background:#FCFCFC;
-    border:1px solid #CCCCCC;
-    border-radius:5px;
-    padding:10px 15px;
-    margin:10px 0;
-    line-height:1.5;
+  .corporate h2 a, .corporate h2 a:visited {
+    text-decoration:none;
   }
-  
+  .corporate_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+
+  .corporate h3 {
+    font-size:26px;
+    padding:16px 0px 15px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    margin-top:40px;
+    color:#3c3c33;
+    text-align:center;
+  }
+  .corporate h4 {
+    font-size:18px;
+    font-weight:bold;
+    padding:6px 0px 4px 5px;
+    letter-spacing:0.5px;
+    margin:15px 0 5px 0;
+  }
+  .corporate p {
+    font-size:16px;
+    color:#111;
+    margin:5px 0;
+    line-height:1.9;
+  }
+
   /* 会社情報 */
   .corporate table {
     border-collapse: collapse;
@@ -223,6 +376,129 @@
   .corporate table td {
     padding:7px;
     padding:20px 20px;
+  }
+
+  /* 学習教材 */
+  .learning h2 {
+    font-size:32px;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-image:url(/images/learning/learning-image.jpg);
+    background-position:50% 50%;
+    color:white;
+    height:300px;
+    padding-top:140px;
+  }
+  .learning h2 a, .learning h2 a:visited {
+    text-decoration:none;
+  }
+  .learning_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+
+  .learning h3 {
+    font-size:26px;
+    padding:16px 0px 15px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    margin-top:40px;
+    color:#3c3c33;
+    text-align:center;
+  }
+  .learning h4 {
+    font-size:18px;
+    font-weight:bold;
+    padding:6px 0px 4px 5px;
+    letter-spacing:0.5px;
+    margin:15px 0 5px 0;
+  }
+  .learning p {
+    font-size:16px;
+    color:#111;
+    margin:5px 0;
+    line-height:1.9;
+  }
+
+  .learning h2 {
+    font-size:32px;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-image:url(/images/learning/learning-image.jpg);
+    background-position:50% 50%;
+    color:white;
+    height:300px;
+    padding-top:140px;
+  }
+  .learning h2 a, .learning h2 a:visited {
+    text-decoration:none;
+  }
+  .learning_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+
+  .learning h3 {
+    font-size:26px;
+    padding:16px 0px 15px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    margin-top:40px;
+    color:#3c3c33;
+    text-align:center;
+  }
+  
+  .learning ul {
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .learning li {
+    width:50%;
+    border:1px solid #ddd;
+    border-bottom:none;
+    border-right:none;
+  }
+  .learning li a {
+    display:block;
+    width:100%;
+    padding:10px;
+    color:#33f;
+    height:100%;
+    color:#2F2F22;
+  }
+  .learning li a:hover {
+    opacity:0.8;
+  }
+  .learning li img {
+    vertical-align:-17px;
+    margin-right:10px;
+  }
+  .learning li:nth-child(2) {
+    border-right:1px solid #ddd;
+  }
+  .learning li:nth-last-child(1) {
+    border-bottom:1px solid #ddd;
+  }
+  .learning li:nth-last-child(2) {
+    border-bottom:1px solid #ddd;
   }
   
   /* アクセス */
@@ -376,5 +652,13 @@
   .header_menu a:hover {
     opacity:1;
     background:#3E85C6
+  }
+
+  .learning li {
+    width:100%;
+  }
+
+  .learning li {
+    border-right:1px solid #ddd;
   }
 }
