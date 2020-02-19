@@ -71,7 +71,7 @@
     height:48px;
     border-bottom:1px solid #cccccf;
   }
-  
+
   /* tags */
   .site_title {
     width:180px;
@@ -84,6 +84,16 @@
     padding:9px 0;
     height:100%;
   }
+
+  .header_padding {
+    width:calc(100% - 180px - 150px * 4);
+    background:white;
+    font-size:12px;
+    color:#666;
+    padding-top:16px;
+    padding-left:18px;
+  }
+
   .site_title img {
     width:95px;
     vertical-align:middle;
@@ -92,7 +102,7 @@
     display:none;
   }
   .header_menu {
-    width:calc(100% - 180px);
+    width:calc(150px * 4);
     display:flex;
     background:white;
   }
@@ -208,12 +218,23 @@
   }
   
   .services ul {
+    width:calc(100% - 16px);
+    margin-left:auto;
+    margin-right:auto;
     display:flex;
     flex-wrap:wrap;
   }
   .services li {
-    width:50%;
+    width:calc(50% - 4px);
     border:1px solid #ddd;
+    margin-top:4px;
+    margin-bottom:4px;
+  }
+  .services li:nth-child(2n + 1) {
+    margin-right:4px;
+  }
+  .services li:nth-child(2n) {
+    margin-left:4px;
   }
   .services li a {
     display:block;
@@ -230,19 +251,7 @@
     vertical-align:-17px;
     margin-right:10px;
   }
-  .services li:nth-child(odd) {
-    border-bottom:none;
-  }
-  .services li:nth-child(even) {
-    border-left:none;
-    border-bottom:none;
-  }
-  .services li:nth-last-child(2) {
-    border-bottom:1px solid #ddd;
-  }
-  .services li:last-child {
-    border-bottom:1px solid #ddd;
-  }
+
   
   /* 会社情報 */
   .corporate h2 {
@@ -466,17 +475,15 @@
     text-align:center;
   }
   
-  .learning ul {
-    display:flex;
-    flex-wrap:wrap;
+  .learning table {
+    border-collapse:collapse;
+    width:100%;
   }
-  .learning li {
+  .learning td {
     width:50%;
     border:1px solid #ddd;
-    border-bottom:none;
-    border-right:none;
   }
-  .learning li a {
+  .learning td a {
     display:block;
     width:100%;
     padding:10px;
@@ -484,21 +491,12 @@
     height:100%;
     color:#2F2F22;
   }
-  .learning li a:hover {
+  .learning td a:hover {
     opacity:0.8;
   }
-  .learning li img {
+  .learning td img {
     vertical-align:-17px;
     margin-right:10px;
-  }
-  .learning li:nth-child(2) {
-    border-right:1px solid #ddd;
-  }
-  .learning li:nth-last-child(1) {
-    border-bottom:1px solid #ddd;
-  }
-  .learning li:nth-last-child(2) {
-    border-bottom:1px solid #ddd;
   }
   
   /* アクセス */
@@ -654,11 +652,15 @@
     background:#3E85C6
   }
 
-  .learning li {
+  .learning table {
+    border-bottom:1px solid #ddd;
+  }
+  .learning td {
+    display:block;
+    border-bottom:none;
     width:100%;
   }
-
-  .learning li {
-    border-right:1px solid #ddd;
+  .header_padding {
+    display:none;
   }
 }
