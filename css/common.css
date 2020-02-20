@@ -17,14 +17,11 @@
   
   /* footer */
   .footer {
-    background:#1A1A1A;
+    background:#c29823;
     text-align:center;
-    padding:15px 0;
-    border-top:1px solid #ccc;
-    height:58px;
-  }
-  .footer a, .footer a:visited {
-    color:#666666;
+    padding:13px 0;
+    color:white;
+    font-size:16px;
   }
   
   /* container */
