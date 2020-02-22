@@ -17,11 +17,12 @@
   
   /* footer */
   .footer {
-    background:#c29823;
+    background:#2E75B6;
     text-align:center;
     padding:13px 0;
     color:white;
     font-size:16px;
+    margin-top:50px;
   }
   
   /* container */
@@ -129,15 +130,15 @@
   /* サービス */
   .services h2 {
     font-size:32px;
+    background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
-    background-image:url(/images/services/services-image.jpg);
     background-position:50% 50%;
+    color:black;
     color:white;
-    height:300px;
-    padding-top:140px;
+    padding-top:30px;
   }
   .services h2 a, .services h2 a:visited {
     text-decoration:none;
@@ -177,43 +178,6 @@
     line-height:1.9;
   }
 
-  .services h2 {
-    font-size:32px;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/services/services-image.jpg);
-    background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
-  }
-  .services h2 a, .services h2 a:visited {
-    text-decoration:none;
-  }
-  .services_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-
-  .services h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
-  }
-  
   .services ul {
     width:calc(100% - 16px);
     margin-left:auto;
@@ -253,15 +217,15 @@
   /* 会社情報 */
   .corporate h2 {
     font-size:32px;
+    background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
-    background-image:url(/images/corporate/corporate-image.jpg);
     background-position:50% 50%;
+    color:black;
     color:white;
-    height:300px;
-    padding-top:140px;
+    padding-top:30px;
   }
   .corporate h2 a, .corporate h2 a:visited {
     text-decoration:none;
@@ -300,58 +264,6 @@
     margin:5px 0;
     line-height:1.9;
   }
-
-  .corporate h2 {
-    font-size:32px;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/corporate/corporate-image.jpg);
-    background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
-  }
-  .corporate h2 a, .corporate h2 a:visited {
-    text-decoration:none;
-  }
-  .corporate_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-
-  .corporate h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
-  }
-  .corporate h4 {
-    font-size:18px;
-    font-weight:bold;
-    padding:6px 0px 4px 5px;
-    letter-spacing:0.5px;
-    margin:15px 0 5px 0;
-  }
-  .corporate p {
-    font-size:16px;
-    color:#111;
-    margin:5px 0;
-    line-height:1.9;
-  }
-
-  /* 会社情報 */
   .corporate table {
     border-collapse: collapse;
     margin-left:15px;
@@ -404,7 +316,7 @@
     text-align:center;
     color:white;
     font-weight:bold;
-    background: #1E65A6;
+    background: #2E75B6;
     background-size:4px 4px;
     padding:13px 0;
     letter-spacing:1px;
@@ -435,43 +347,6 @@
     line-height:1.9;
   }
 
-  .learning h2 {
-    font-size:32px;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/learning/learning-image.jpg);
-    background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
-  }
-  .learning h2 a, .learning h2 a:visited {
-    text-decoration:none;
-  }
-  .learning_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-
-  .learning h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
-  }
-  
   .learning table {
     border-collapse:collapse;
     width:100%;
@@ -483,7 +358,7 @@
   .learning td a {
     display:block;
     width:100%;
-    padding:10px;
+    padding:30px 10px;
     color:#33f;
     height:100%;
     color:#2F2F22;
