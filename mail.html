@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/images/kimoto-system-favicon.png">
+<link rel="stylesheet" type="text/css" href="/css/common.css">
+
+<script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+<link  type="text/css" rel="stylesheet" href="/js/google-code-prettify/prettify.css"/>
+<script>
+  $(function(){
+    // google code prettifyの有効化
+    $("pre").addClass("prettyprint");
+    function init(event){
+      prettyPrint();
+    }
+    if(window.addEventListener)window.addEventListener("load",init,false);
+    else if(window.attachEvent)window.attachEvent("onload",init);
+    
+    $(".to-top").click(function() {
+      // ページの一番上までスクロールさせます。
+      $('body, html').animate({scrollTop: 0}, 300, 'linear');;
+    });
+  });
+</script>
+
+<title>
+     - Webサイト作成・Webサービス開発・業務効率化なら木本システム</title>
+<meta name="description" content="padding-top:30px;">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <script>
+$(function() {
+  $(window).on('resize', function () {
+    if ($(window).width() > 960) {
+      $('.header_menu').show();
+      $('.header_menu').css('display', 'flex');
+    }
+    else if ($(window).width() <= 960) {
+      $('.header_menu').hide();
+    }
+  });
+});
+</script>
+
+<!-- header -->
+<div class="header_title">
+  <div class="site_title">
+    <a href="/"><img src="/images/kimoto-system-logo.png" alt="Webサイト作成・Webサービス開発・業務効率化なら木本システム"></a>
+  </div>
+  <div class="header_padding">
+    木本システム株式会社
+  </div>
+  <div class="header_menu_button" onclick="$('.header_menu').toggle()">
+    <img src="/images/header/menu-icon.png">
+  </div>
+  <ul class="header_menu">
+    <li><a href="/services.html">サービス</a></li>
+    <li><a href="/corporate.html">会社情報</a></li>
+    <li><a href="/learning.html">研修教材</a></li>
+    <li><a href="/mail.html" style="background:#ff38b6;color:white;">お見積り</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="main">
+        <div class="content">
+          <div class="entry">
+  <div class="top">
+    <!-- top -->
+
+  </div>
+  <div class="middle">
+    <style>
+  .mail-form h2 {
+    font-size:32px;
+    background: #1E65A6;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    color:white;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  .mail-form form {
+    width:calc(100% - 30px);
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:30px;
+  }
+  /* メールフォーム */
+  .mail-form {
+    background:#eee;
+  }
+  .mail-form-title {
+    font-weight:bold;
+    margin-bottom:3px;
+    letter-spacing:1px;
+  }
+  
+  .mail-form label {
+    margin-bottom:19px;
+    display:block;
+    font-size:20px;
+  }
+  .mail-form input {
+    width:100%;
+    padding:5px;
+    font-size:20px;
+  }
+  .mail-form textarea {
+    width:100%;
+    min-height:400px;
+    font-size:20px;
+  }
+  .mail-form button {
+    width:100%;
+    background:#f7338b;
+    color:white;
+    border:none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    font-size:27px;
+    border-radius:5px;
+    margin-bottom:30px;
+    padding:10px 0 7px 0;
+    cursor:pointer;
+  }
+  .mail-form-success {
+<p>
+  　  padding-top:30px;
+</p>
+    padding-bottom:30px;
+  }
+  .mail-form-errors {
+    color:red;
+  }
+  .footer {
+    margin-top:0;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    $('.mail-form button').on('click', function () {
+      var form_values = $('.mail-form form').serialize();
+      $.post(
+        "/mail.cgi",
+        form_values,
+        function (data) {
+          if (data.success) {
+            $('.mail-form').html('<div class="mail-form-success">お見積りを受け付けました。<br>ご指定していただいたメールアドレスに、返信します。</div>');
+          }
+          else {
+            // エラーメッセージ
+            var errors = data.errors;
+            $('.mail-form-errors').empty();
+            for (var i = 0; i < errors.length; i++) {
+              var error = errors[i];
+              var li = $('<li></li>');
+              li.text(error);
+              $('.mail-form-errors').append(li);
+            }
+          }
+        },
+        "json"
+      );
+    });
+  });
+</script>
+<div class="mail-form">
+  <h2><a href="/mail.html">
+    </a><div>お見積り</div>
+  </h2>
+  <ul class="mail-form-errors">
+  </ul>
+  <form>
+    <label>
+      <div class="mail-form-title">
+        会社名(担当者様名):
+      </div>
+      <div class="mail-form-body">
+        <input type="text" name="name"><br>
+      </div>
+    </label>
+    <label>
+      <div class="mail-form-title">
+        メールアドレス:
+      </div>
+      <div class="mail-form-body">
+        <input type="text" name="email">
+      </div>
+    </label>
+    <label>
+      <div class="mail-form-title">
+        実現したい内容をもれなくお書きください:
+      </div>
+      <div class="mail-form-body">
+        <textarea name="message"></textarea>
+      </div>
+    </label>
+    <div>
+      <button type="button">見積もりを送信</button>
+    </div>
+  </form>
+</div>
+
+  </div>
+  <div class="bottom">
+    <!-- bottom -->
+
+  </div>
+</div>
+
+        </div>
+        <div class="side">
+          <!-- side -->
+
+        </div>
+      </div>
+      <div class="footer">
+        <!-- footer -->
+
+<div>
+  <b>Webサイト作成 月額9万8000円</b>
+</div>
+<div>
+  <b>Webサービス開発 月額29万8000円</b>
+</div>
+<div>
+  <b>｜</b>
+</div>
+<div>
+<b>木本システム</b>
+</div>
+<div>
+  Copyright © Kimoto System Co.,Ltd. All Rights Reserved.
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -2,6 +2,7 @@
 
 use strict;
 use warnings;
+use Encode 'encode';
 
 # Response
 my $res = <<"EOS";
