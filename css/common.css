@@ -22,7 +22,6 @@
     padding:13px 0;
     color:white;
     font-size:16px;
-    margin-top:50px;
   }
   
   /* container */
@@ -125,6 +124,61 @@
   }
   .header_menu a:hover {
     opacity:0.8;
+  }
+  
+  /* トップページ 見積もり */
+  .index-mitumori {
+    padding-top:80px;
+    padding-bottom:80px;
+  }
+  .index-mitumori h2 {
+    font-size:38px;
+    text-align:center;
+    letter-spacing:8px;
+    padding-bottom:25px;
+  }
+  .index-mitumori-button {
+    text-align:center;
+  }
+  .index-mitumori-button a {
+    display:block;
+    background:#FF60C5;
+    color:white;
+    font-size:36px;
+    padding:25px 0;
+    border-radius:5px;
+    margin-bottom:25px;
+    width:calc(100% - 30px);
+    max-width:650px;
+    margin-left:auto;
+    margin-right:auto;
+    letter-spacing:5px;
+  }
+  .index-mitumori-tel-message {
+    text-align:center;
+    color:#444;
+    padding:10px 0 0 0;
+    letter-spacing:3px;
+  }
+  .index-mitumori-tel {
+    text-align:center;
+  }
+  .index-mitumori-tel-number {
+    font-size:40px;
+    border-bottom:1px dashed #ffab36;
+    display:inline-block;
+    padding:5px 5px 0px 5px;
+  }
+  .index-mitumori-tel-number a {
+    color:#ffab36;
+    letter-spacing:8px;
+    font-size:53px;
+  }
+  .index-mitumori-jikan {
+    text-align:center;
+    color:#444;
+    padding:10px;
+    letter-spacing:1px;
   }
 
   /* サービス */
@@ -535,4 +589,35 @@
   .header_padding {
     display:none;
   }
+
+  /* トップページ 見積もり */
+  .index-mitumori {
+  }
+  .index-mitumori h2 {
+    font-size:28px;
+    letter-spacing:3px;
+  }
+  .index-mitumori-button {
+  }
+  .index-mitumori-button a {
+    font-size:26px;
+    letter-spacing:3px;
+  }
+  .index-mitumori-tel-message {
+    letter-spacing:0;
+  }
+  .index-mitumori-tel {
+  }
+  .index-mitumori-tel-number {
+    font-size:26px;
+    letter-spacing:3px;
+  }
+  .index-mitumori-tel-number a {
+    font-size:30px;
+    letter-spacing:3px;
+  }
+  .index-mitumori-jikan {
+    letter-spacing:0;
+  }
+
 }
