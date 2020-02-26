@@ -433,92 +433,86 @@
     margin-right:auto;
   }
   
-  /* advanced */
-  .day {
-    text-align:right;
-    color:#999;
-  }
-  .before-days {
+  /* 採用情報 */
+  .recruit h2 {
+    font-size:32px;
+    background: #1E65A6;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
     text-align:center;
+    background-position:50% 50%;
+    color:black;
+    color:white;
+    padding-top:30px;
   }
-  .side-list {
-    box-shadow: 0 0 3px rgba(0,0,0,.1);
+  .recruit h2 a, .recruit h2 a:visited {
+    text-decoration:none;
   }
-  .side-list-title {
-    background:#0070C0;
+  .recruit_message {
+    text-align:center;
     color:white;
     font-weight:bold;
-    padding: 11px 0px 9px 0px;
-    text-align:center;
-    border:1px solid #0070C0;
-    border-bottom:none;
-  }
-  .side-list ul {
-  }
-  .side-list li {
-    list-style:none;
-    background:white;
-    border:1px solid #D0D0DA;
-    border-bottom:none;
-    padding:12px 0px 10px 15px;
-  }
-  .side-list li:last-child {
-    border-bottom:1px solid #D0D0DA;
-  }
-  .side-list li:first-child {
-    border-top:none;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
   }
 
-  ol.bread {
-    border:none;
-    background:none;
-    padding:0;
-  }
-  .bread li {
-    display:inline-block;
-    list-style-type:none;
-    font-size:14px;
-    margin:0;
-    width:28px;
-    height:28px;
-  }
-  .bread a {
-    width:100%;
-    background:#2090E0;
-    color:white;
-    border-radius:3px;
-    text-decoration:none;
-    display:block;
-    padding:3px 3px;
-  }
-  .bread a:hover {
-    background:#2090E0;
-  }
-  .bread a:visited {
-    color:white;
-  }
-  
-  .bread img {
-    width:22px;
-    vertical-align:-3px;
-  }
-  
-  .to_top {
+  .recruit h3 {
+    font-size:26px;
+    padding:16px 0px 15px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    margin-top:40px;
+    color:#3c3c33;
     text-align:center;
-    margin-top:30px;
   }
-  .to_top a {
-    display:block;
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    background:#eeeeff;
-    border:1px solid #30a0F0;
-    text-align:center;
-    padding-top:10px;
-    cursor:pointer;
-    color:#0070C0;
+  .recruit h4 {
     font-size:18px;
+    font-weight:bold;
+    padding:6px 0px 4px 5px;
+    letter-spacing:0.5px;
+    margin:15px 0 5px 0;
+  }
+  .recruit p {
+    font-size:16px;
+    color:#111;
+    margin:5px 0;
+    line-height:1.9;
+  }
+  .recruit table {
+    border-collapse: collapse;
+    margin-left:15px;
+    width:100%;
+    max-width:1080px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:15px;
+    margin-bottom:50px;
+    margin-top:50px;
+  }
+  
+  .recruit table tr {
+    border:1px solid #83b0de;
+    border-right:none;
+    border-left:none;
+  }
+
+  .recruit table th {
+    padding:7px;
+    background:#dbedff;
+    font-weight:bold;
+    padding:20px 20px;
+    font-size:14px;
+    color:#000;
+  }
+
+  .recruit table td {
+    padding:7px;
+    padding:20px 20px;
   }
 
 /* Tablet and Smart phone */
