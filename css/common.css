@@ -6,6 +6,7 @@
     padding:0;
     box-sizing: border-box;
     list-style:none;
+    -webkit-appearance: none;
   }
   body {
     font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Segoe UI", "メイリオ", "Meiryo",sans-serif;
@@ -142,7 +143,7 @@
   }
   .index-mitumori-button a {
     display:block;
-    background:#f5a41b;
+    background:#FFBF51;
     color:white;
     font-size:36px;
     padding:25px 0;
@@ -170,7 +171,7 @@
     padding:5px 5px 0px 5px;
   }
   .index-mitumori-tel-number a {
-    color:#F5A41B;
+    color:#FFBF51;
     letter-spacing:8px;
     font-size:53px;
   }
@@ -513,6 +514,74 @@
   .recruit table td {
     padding:7px;
     padding:20px 20px;
+  }
+
+  /* メールフォーム */
+  .mail-form {
+    background:#fff6e6;
+  }
+  .mail-form h2 {
+    font-size:32px;
+    background: #fcae28;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    color:white;
+    padding-top:16px;
+    padding-bottom:13px;
+  }
+  .mail-form form {
+    width:calc(100% - 30px);
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:30px;
+  }
+  .mail-form-title {
+    font-weight:bold;
+    margin-bottom:3px;
+    letter-spacing:1px;
+  }
+  
+  .mail-form label {
+    margin-bottom:19px;
+    display:block;
+    font-size:20px;
+  }
+  .mail-form input {
+    width:100%;
+    padding:10px 5px;
+    font-size:20px;
+    border:1px solid #e3c791;
+  }
+  .mail-form textarea {
+    width:100%;
+    min-height:400px;
+    font-size:20px;
+    padding:10px 5px;
+    border:1px solid #e3c791;
+  }
+  .mail-form button {
+    width:100%;
+    background:#F5A41B;
+    color:white;
+    border:none;
+    font-size:27px;
+    border-radius:5px;
+    margin-bottom:30px;
+    padding:20px 0 17px 0;
+    cursor:pointer;
+  }
+  .mail-form-success {
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  .mail-form-errors {
+    color:red;
+  }
+  .footer {
+    margin-top:0;
   }
 
 /* Tablet and Smart phone */
