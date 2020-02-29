@@ -461,6 +461,13 @@
     line-height:1.9;
     font-size:16px;
   }
+  
+  .recruit_description {
+    width:100%;
+    max-width:1080px;
+    margin-left:auto;
+    margin-right:auto;
+  }
 
   .recruit h3 {
     font-size:26px;
@@ -509,6 +516,7 @@
     padding:20px 20px;
     font-size:14px;
     color:#000;
+    width:250px;
   }
 
   .recruit table td {
