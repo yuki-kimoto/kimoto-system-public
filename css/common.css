@@ -257,19 +257,37 @@
     margin-right:10px;
   }
 
-  
-  /* 会社情報 */
-  .corporate h2 {
+/*
+  .learning h2 {
     font-size:32px;
-    background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
+    background-image:url(/images/learning/learning-image.jpg);
     background-position:50% 50%;
-    color:black;
     color:white;
-    padding-top:30px;
+    height:300px;
+    padding-top:140px;
+  }
+  .learning h2 a, .learning h2 a:visited {
+    text-decoration:none;
+  }
+*/
+
+  
+  /* 会社情報 */
+  .corporate h2 {
+    font-size:32px;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-image:url(/images/corporate/corporate-image.jpg);
+    background-position:50% 50%;
+    color:white;
+    height:300px;
+    padding-top:140px;
   }
   .corporate h2 a, .corporate h2 a:visited {
     text-decoration:none;
@@ -541,6 +559,75 @@
     opacity:0.8;
   }
 
+  /* 代表メッセージ */
+  .message {
+    padding-bottom:80px;
+  }
+  .message h2 {
+    font-size:32px;
+    background: #1E65A6;
+    margin:0;
+    padding:20px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-position:50% 50%;
+    color:black;
+    color:white;
+  }
+  .message h2 a, .message h2 a:visited {
+    text-decoration:none;
+  }
+  .message_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 10px;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+  .message_image {
+    font-size:32px;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    color:white;
+  }
+  .message_image img {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    max-width:550px;
+    width:100%;
+  }
+  .message_description {
+    width:100%;
+    max-width:960px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#333;
+    text-align:center;
+  }
+  .message p {
+    width:calc(100% - 30px);
+    max-width:680px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-bottom:20px;
+  }
+  .message h3 {
+    font-size:26px;
+    padding:6px 0px 5px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    margin-top:20px;
+    color:#3c3c33;
+    text-align:center;
+  }
   /* メールフォーム */
   .mail-form {
     background:#fff6e6;
@@ -714,5 +801,15 @@
   }
 
   .recruit table td {
+  }
+
+  .learning h2 {
+    background-position:35% 50%;
+    background-size:600px;
+  }
+
+  .corporate h2 {
+    background-position:90% 25%;
+    background-size:600px;
   }
 }
