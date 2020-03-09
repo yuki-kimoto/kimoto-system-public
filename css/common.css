@@ -20,7 +20,7 @@
   .footer {
     background:#2E75B6;
     text-align:center;
-    padding:13px 0;
+    padding:20px 0 17px 0;
     color:white;
     font-size:16px;
   }
@@ -117,6 +117,9 @@
   }
   
   /* トップページ 見積もり */
+  .index {
+    padding-bottom:50px;
+  }
   .index-mitumori {
     padding-top:80px;
     padding-bottom:80px;
@@ -171,6 +174,30 @@
     letter-spacing:1px;
   }
 
+  /* トップページ ニュース */
+  .index-news {
+    
+  }
+  .index-news h2 {
+    text-align:center;
+    font-size:26px;
+    letter-spacing:3px;
+  }
+  .index-news table {
+    width:calc(100% - 30px);
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15px;
+  }
+  .index-news th {
+    white-space:nowrap;
+    padding:15px;
+    text-align:left;
+  }
+  .index-news td {
+    padding:15px;
+  }
   /* サービス */
   .services h2 {
     font-size:32px;
