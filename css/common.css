@@ -199,6 +199,9 @@
     padding:15px;
   }
   /* サービス */
+  .services {
+    padding-bottom:50px;
+  }
   .services h2 {
     font-size:32px;
     background: #1E65A6;
