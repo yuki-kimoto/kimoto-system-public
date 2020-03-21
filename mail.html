@@ -48,10 +48,10 @@ $(function() {
 
 <!-- header -->
 <div class="header_site_title">
-  <a href="/"><img src="/images/kimoto-system-logo.png" alt="Webシステム開発なら木本システム"></a>
+  <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl Webシステム開発"></a>
 </div>
 <div class="header_company_name">
-  木本システム株式会社
+  Perl Webシステム開発の木本システム
 </div>
 <div class="header_menu_button" onclick="$('.header_menu').toggle()">
   <img src="/images/header/menu-icon.png">
@@ -108,30 +108,102 @@ $(function() {
   <ul class="mail-form-errors">
   </ul>
   <form>
-    <label>
-      <div class="mail-form-title">
-        会社名(担当者様名):
-      </div>
-      <div class="mail-form-body">
-        <input type="text" name="name"><br>
-      </div>
-    </label>
-    <label>
-      <div class="mail-form-title">
-        メールアドレス:
-      </div>
-      <div class="mail-form-body">
-        <input type="text" name="email">
-      </div>
-    </label>
-    <label>
-      <div class="mail-form-title">
-        実現したい内容をもれなくお書きください:
-      </div>
-      <div class="mail-form-body">
-        <textarea name="message"></textarea>
-      </div>
-    </label>
+    <div class="mail-form-title">
+      サービス
+    </div>
+    <div class="mail-form-body">
+      <ul class="mail-form-radio">
+        <li>
+          <input type="radio" checked=checked name="service" value="Webシステム開発スタートアップパッケージ基本価格 月額29万8000円" id="service1">
+          <label for="service1">Webシステム開発スタートアップパッケージ<br>基本価格 月額29万8000円</label>
+        </li>
+        <li>
+          <input type="radio" name="service" value="Webシステム開発マネージドパッケージ 基本価格 月額59万8000円" id="service2">
+          <label for="service2">Webシステム開発マネージドパッケージ<br>基本価格 月額59万8000円</label>
+        </li>
+        <li>
+          <input type="radio" name="service" value="Webシステム運用保守パッケージ 基本価格 月額29万8000円" id="service3">
+          <label for="service3">Webシステム運用保守パッケージ<br>基本価格 月額29万8000円</label>
+        </li>
+      </ul>
+    </div>
+    <div class="mail-form-title">
+      契約期間
+    </div>
+    <div class="mail-form-body">
+      <select>
+        <option value="0">▼契約期間</option>
+        <option value="3">3ヵ月</option>
+        <option value="4">4ヵ月</option>
+        <option value="5">5ヵ月</option>
+        <option value="6">6ヵ月</option>
+        <option value="7">7ヵ月</option>
+        <option value="8">8ヵ月</option>
+        <option value="9">9ヵ月</option>
+        <option value="10">10ヵ月</option>
+        <option value="11">11ヵ月</option>
+        <option value="12">12ヵ月</option>
+        <option value="13">1年以上～</option>
+      </select>
+    </div>
+    <div class="mail-form-title">
+      業種
+    </div>
+    <div class="mail-form-body">
+      <select>
+        <option value="0">▼業種を選択</option>
+        <option value="農業，林業">農業，林業</option>
+        <option value="漁業">漁業</option>
+        <option value="鉱業，採石業，砂利採取業">鉱業，採石業，砂利採取業</option>
+        <option value="建設業">建設業</option>
+        <option value="製造業">製造業</option>
+        <option value="電気・ガス・熱供給・水道業">電気・ガス・熱供給・水道業</option>
+        <option value="情報通信業">情報通信業</option>
+        <option value="運輸業，郵便業">運輸業，郵便業</option>
+        <option value="卸売業・小売業">卸売業・小売業</option>
+        <option value="金融業・保険業">金融業・保険業</option>
+        <option value="不動産業，物品賃貸業">不動産業，物品賃貸業</option>
+        <option value="学術研究，専門・技術サービス業">学術研究，専門・技術サービス業</option>
+        <option value="宿泊業，飲食サービス業">宿泊業，飲食サービス業</option>
+        <option value="生活関連サービス業，娯楽業">生活関連サービス業，娯楽業</option>
+        <option value="教育，学習支援業">教育，学習支援業</option>
+        <option value="医療，福祉">医療，福祉</option>
+        <option value="複合サービス事業">複合サービス事業</option>
+        <option value="サービス業（他に分類されないもの）">サービス業（他に分類されないもの）</option>
+        <option value="公務（他に分類されるものを除く）">公務（他に分類されるものを除く）</option>
+        <option value="分類不能の産業">分類不能の産業</option>
+      </select>
+    </div>
+    <div class="mail-form-title">
+      会社名
+    </div>
+    <div class="mail-form-body">
+      <input type="text" name="company_name"><br>
+    </div>
+    <div class="mail-form-title">
+      担当者様名
+    </div>
+    <div class="mail-form-body">
+      <input type="text" name="staff_name"><br>
+    </div>
+    <div class="mail-form-title">
+      メールアドレス
+    </div>
+    <div class="mail-form-body">
+      <input type="text" name="email">
+    </div>
+    <div class="mail-form-title">
+      電話番号
+    </div>
+    <div class="mail-form-body">
+      <input type="text" name="tel">
+    </div>
+    <div class="mail-form-title">
+      実現したい内容を記入
+    </div>
+    <div class="mail-form-body">
+      <textarea name="message"></textarea>
+    </div>
     <div>
       <button type="button">見積もり内容を送信</button>
     </div>

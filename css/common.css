@@ -8,6 +8,7 @@
     list-style:none;
     -webkit-appearance: none;
   }
+
   body {
     font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Segoe UI", "メイリオ", "Meiryo",sans-serif;
   }
@@ -685,13 +686,36 @@
     margin-bottom:3px;
     letter-spacing:1px;
   }
-  
-  .mail-form label {
-    margin-bottom:19px;
-    display:block;
+  .mail-form input[type=text] {
+    width:100%;
+    padding:10px 5px;
     font-size:20px;
+    border:1px solid #e3c791;
   }
-  .mail-form input {
+  .mail-form input[type=radio] {
+    display:none;
+  }
+  .mail-form-radio li {
+    border:1px solid #e3c791;
+    border-bottom:none;
+    background:white;
+  }
+  .mail-form-radio li:first-child {
+    border-radius:5px 5px 0 0;
+  }
+  .mail-form-radio li:last-child {
+    border-bottom:1px solid #e3c791;
+    border-radius:0 0 5px 5px;
+  }
+  .mail-form-radio label {
+    display:block;
+    padding:10px 20px;
+    cursor:pointer;
+  }
+  .mail-form input[type=radio]:checked + label {
+    background:#ffe4b5;
+  }
+  .mail-form select {
     width:100%;
     padding:10px 5px;
     font-size:20px;
