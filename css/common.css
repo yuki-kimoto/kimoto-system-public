@@ -120,6 +120,7 @@
   .index {
   }
   .index-mitumori {
+    border-top:1px solid #eeeeef;
     padding-top:80px;
     padding-bottom:80px;
   }
@@ -175,7 +176,8 @@
 
   /* トップページ ニュース */
   .index-news {
-    
+    padding:50px 0;
+    border-top:1px solid #eeeeef;
   }
   .index-news h2 {
     text-align:center;
@@ -197,6 +199,51 @@
   .index-news td {
     padding:15px;
   }
+  
+  /* コンテンツ一覧 */
+  .index-content-list {
+    padding:50px 0;
+  }
+  .index-content-list h2 {
+    text-align:center;
+    font-size:26px;
+    letter-spacing:3px;
+    margin-bottom:20px;
+    
+  }
+  .index-content-list {
+    border-top:1px solid #eeeeef;
+  }
+  .index-content-list a, .index-content-list a:visited {
+    color:#333;
+    display:block;
+  }
+  .index-content-list ul {
+    display:flex;
+    flex-wrap:wrap;
+    width:calc(100% - 30px);
+    max-width:960px;
+    margin:0 auto;
+  }
+  .index-content-list li {
+    width:33.3%;
+    text-align:center;
+    font-size:19px;
+    line-height:1.8;
+  }
+  .index-content-list b {
+    letter-spacing:2px;
+    margin-bottom:5px;
+    font-size:105%;
+    display:block;
+  }
+  .index-content-list a, .index-content-list:visited {
+    color:#333;
+  }
+  .index-content-list a:hover {
+    opacity:0.8;
+  }
+
   /* サービス */
   .services {
     padding-bottom:50px;
@@ -215,6 +262,7 @@
   }
   .services h2 a, .services h2 a:visited {
     text-decoration:none;
+    letter-spacing:1px;
   }
   .services_message {
     text-align:center;
@@ -787,6 +835,7 @@
 
   /* トップページ 見積もり */
   .index-mitumori {
+    
   }
   .index-mitumori h2 {
     font-size:28px;
@@ -841,4 +890,10 @@
     background-position:90% 25%;
     background-size:600px;
   }
+  
+  /* コンテンツ一覧 */
+  .index-content-list li {
+    width:50%;
+  }
+
 }
