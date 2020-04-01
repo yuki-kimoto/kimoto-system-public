@@ -116,16 +116,115 @@
     opacity:0.8;
   }
   
-  /* トップページ 見積もり */
-  .index {
+  /* トップページ サービス */
+  .index_service {
+    padding:30px 0;
+    padding-bottom:50px;
+    border-bottom:1px solid #ddd;
   }
+  .index_service h2 {
+    font-size:29px;
+    text-align:center;
+    margin-bottom:30px;
+  }
+  .index_service ul {
+    width:calc(100% - 16px);
+    max-width:960px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .index_service li {
+    width:calc(50% - 20px);
+    margin-left:10px;
+    margin-right:10px;
+    padding:10px;
+    background:#2E75B6;
+    color:white;
+    text-align:center;
+    font-size:20px;
+    padding:30px 15px;
+  }
+  .index_service_title {
+    font-size:25px;
+    font-weight:bold;
+  }
+  
+  /* トップページ ニュース */
+  .index-news {
+    padding:50px 0;
+    border-bottom:1px solid #eeeeef;
+  }
+  .index-news h2 {
+    text-align:center;
+    font-size:29px;
+    letter-spacing:3px;
+  }
+  .index-news table {
+    width:calc(100% - 30px);
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15px;
+  }
+  .index-news th {
+    white-space:nowrap;
+    padding:15px;
+    text-align:left;
+  }
+  .index-news td {
+    padding:15px;
+  }
+  
+  /* トップページ 会社案内 */
+  .index-content-list {
+    padding:50px 0 60px 0;
+  }
+  .index-content-list h2 {
+    text-align:center;
+    font-size:29px;
+    letter-spacing:3px;
+    margin-bottom:30px;
+  }
+  .index-content-list a, .index-content-list a:visited {
+    color:#333;
+    display:block;
+  }
+  .index-content-list ul {
+    display:flex;
+    flex-wrap:wrap;
+    width:calc(100% - 30px);
+    max-width:960px;
+    margin:0 auto;
+  }
+  .index-content-list li {
+    width:33.3%;
+    text-align:center;
+    font-size:19px;
+    line-height:1.8;
+  }
+  .index-content-list b {
+    letter-spacing:2px;
+    margin-bottom:5px;
+    font-size:105%;
+    display:block;
+  }
+  .index-content-list a, .index-content-list:visited {
+    color:#333;
+  }
+  .index-content-list a:hover {
+    opacity:0.8;
+  }
+
+  /* トップページ 見積もり */
   .index-mitumori {
     border-top:1px solid #eeeeef;
-    padding-top:80px;
-    padding-bottom:80px;
+    padding-top:60px;
+    padding-bottom:60px;
   }
   .index-mitumori h2 {
-    font-size:38px;
+    font-size:36px;
     text-align:center;
     letter-spacing:8px;
     padding-bottom:25px;
@@ -172,76 +271,6 @@
     color:#444;
     padding:10px;
     letter-spacing:1px;
-  }
-
-  /* トップページ ニュース */
-  .index-news {
-    padding:50px 0;
-    border-top:1px solid #eeeeef;
-  }
-  .index-news h2 {
-    text-align:center;
-    font-size:26px;
-    letter-spacing:3px;
-  }
-  .index-news table {
-    width:calc(100% - 30px);
-    max-width:800px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:15px;
-  }
-  .index-news th {
-    white-space:nowrap;
-    padding:15px;
-    text-align:left;
-  }
-  .index-news td {
-    padding:15px;
-  }
-  
-  /* コンテンツ一覧 */
-  .index-content-list {
-    padding:50px 0;
-  }
-  .index-content-list h2 {
-    text-align:center;
-    font-size:26px;
-    letter-spacing:3px;
-    margin-bottom:20px;
-    
-  }
-  .index-content-list {
-    border-top:1px solid #eeeeef;
-  }
-  .index-content-list a, .index-content-list a:visited {
-    color:#333;
-    display:block;
-  }
-  .index-content-list ul {
-    display:flex;
-    flex-wrap:wrap;
-    width:calc(100% - 30px);
-    max-width:960px;
-    margin:0 auto;
-  }
-  .index-content-list li {
-    width:33.3%;
-    text-align:center;
-    font-size:19px;
-    line-height:1.8;
-  }
-  .index-content-list b {
-    letter-spacing:2px;
-    margin-bottom:5px;
-    font-size:105%;
-    display:block;
-  }
-  .index-content-list a, .index-content-list:visited {
-    color:#333;
-  }
-  .index-content-list a:hover {
-    opacity:0.8;
   }
 
   /* サービス */
@@ -899,40 +928,6 @@
     display:none;
   }
 
-  /* トップページ 見積もり */
-  .index-mitumori {
-    
-  }
-  .index-mitumori h2 {
-    font-size:28px;
-    letter-spacing:3px;
-  }
-  .index-mitumori-button {
-  }
-  .index-mitumori-button a {
-    font-size:26px;
-    letter-spacing:3px;
-  }
-  .index-mitumori-tel-message {
-    letter-spacing:0;
-  }
-  .index-mitumori-tel {
-  }
-  .index-mitumori-tel-number {
-    font-size:26px;
-    letter-spacing:3px;
-  }
-  .index-mitumori-tel-number a {
-    font-size:30px;
-    letter-spacing:3px;
-  }
-  .index-mitumori-jikan {
-    letter-spacing:0;
-  }
-  .recruit ul {
-    margin-top:0;
-  }
-  
   /* 採用情報 */
   .recruit table {
   }
@@ -962,4 +957,37 @@
     width:50%;
   }
 
+  /* トップページ 見積もり */
+  .index-mitumori h2 {
+    font-size:30px;
+    letter-spacing:3px;
+  }
+  .index-mitumori-button {
+  }
+  .index-mitumori-button a {
+    font-size:26px;
+    letter-spacing:3px;
+  }
+  .index-mitumori-tel-message {
+    letter-spacing:0;
+  }
+  .index-mitumori-tel {
+  }
+  .index-mitumori-tel-number {
+    font-size:26px;
+    letter-spacing:3px;
+  }
+  .index-mitumori-tel-number a {
+    font-size:30px;
+    letter-spacing:3px;
+  }
+  .index-mitumori-jikan {
+    letter-spacing:0;
+  }
+  
+  /* トップページ サービス */
+  .index_service li {
+    width:100%;
+    margin:10px auto;
+  }
 }
