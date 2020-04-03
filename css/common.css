@@ -8,6 +8,7 @@
     list-style:none;
     -webkit-appearance: none;
   }
+
   body {
     font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Segoe UI", "メイリオ", "Meiryo",sans-serif;
   }
@@ -80,10 +81,13 @@
   .header_company_name {
     width:calc(100% - 180px - 120px * 5);
     background:white;
-    font-size:12px;
+    font-size:14px;
     color:#666;
-    padding-top:18px;
-    padding-left:18px;
+    padding-top:16px;
+    padding-left:20px;
+  }
+  .header_company_name p {
+    display:inline;
   }
 
   .header_site_title img {
@@ -803,6 +807,7 @@
   /* メールフォーム */
   .mail-form {
     background:#fff6e6;
+    padding-bottom:30px;
   }
   .mail-form h2 {
     font-size:32px;
@@ -812,8 +817,8 @@
     letter-spacing:1px;
     text-align:center;
     color:white;
-    padding-top:16px;
-    padding-bottom:13px;
+    padding-top:23px;
+    padding-bottom:20px;
   }
   .mail-form form {
     width:calc(100% - 30px);
@@ -824,18 +829,47 @@
   }
   .mail-form-title {
     font-weight:bold;
-    margin-bottom:3px;
+    margin-bottom:0px;
     letter-spacing:1px;
+    font-size:17px;
   }
-  
-  .mail-form label {
-    margin-bottom:19px;
-    display:block;
-    font-size:20px;
+  .mail-form-body {
+    margin-bottom:25px;
   }
-  .mail-form input {
+  .mail-form input[type=text] {
     width:100%;
-    padding:10px 5px;
+    padding:10px 10px;
+    font-size:20px;
+    border:1px solid #e3c791;
+  }
+  .mail-form input[type=radio] {
+    display:none;
+  }
+  .mail-form-radio li {
+    border:1px solid #e3c791;
+    border-bottom:none;
+    background:white;
+  }
+  .mail-form-radio li:first-child {
+    border-radius:5px 5px 0 0;
+  }
+  .mail-form-radio li:last-child {
+    border-bottom:1px solid #e3c791;
+    border-radius:0 0 5px 5px;
+  }
+  .mail-form-radio label {
+    display:block;
+    padding:10px 20px 10px 50px;
+    cursor:pointer;
+  }
+  .mail-form input[type=radio]:checked + label {
+    background:url(/images/mail/check.png) no-repeat;
+    background-size:30px;
+    background-position:12px 20px;
+  }
+  .mail-form select {
+    width:100%;
+    padding:10px 10px;
     font-size:20px;
     border:1px solid #e3c791;
   }
@@ -843,7 +877,7 @@
     width:100%;
     min-height:400px;
     font-size:20px;
-    padding:10px 5px;
+    padding:10px 10px;
     border:1px solid #e3c791;
   }
   .mail-form button {
@@ -864,6 +898,13 @@
   .mail-form-errors {
     color:red;
   }
+  .mail-form-note {
+    margin-bottom:30px;
+  }
+  .mail-form-note p {
+    color:#333;
+    margin-bottom:10px;
+  }
   .footer {
     margin-top:0;
   }
@@ -878,7 +919,7 @@
   
   /* tags */
   .header_site_title {
-    width:calc(100% - 52px);
+    width:120px;
   }
   .header_site_title a {
     border-bottom:1px solid #ddd;
@@ -925,7 +966,15 @@
     width:100%;
   }
   .header_company_name {
-    display:none;
+    width:calc(100% - 120px - 52px);
+    border-bottom:1px solid #eeeeef;
+    padding-top:7px;
+    padding-left:0;
+    padding-right:0;
+    text-align:center;
+  }
+  .header_company_name p {
+    display:block;
   }
 
   /* 採用情報 */
