@@ -892,11 +892,26 @@
     cursor:pointer;
   }
   .mail-form-success {
-    padding-top:30px;
-    padding-bottom:30px;
+    width:calc(100% - 30px);
+    max-width:600px;
+    margin:30px auto;
+    padding:20px 20px;
+    border:1px solid #1dd13e;
+    background:#f5fcf5;
+    border-radius:10px;
+    line-height:1.8;
+    color:#002000;
+    display:none;
   }
   .mail-form-errors {
+    width:calc(100% - 30px);
+    max-width:600px;
+    margin:30px auto;
+    background:#fff6f5;
+    border-radius:10px;
+    line-height:1.8;
     color:red;
+    display:none;
   }
   .mail-form-note {
     margin-bottom:30px;

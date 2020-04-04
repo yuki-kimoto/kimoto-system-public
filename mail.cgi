@@ -18,9 +18,6 @@ my $mail_send_only = 'send@kimoto-system.co.jp';
 # 木本システムカスタマーセンター
 my $mail_kimoto_sysmte_customer_center = 'support@kimoto-system.co.jp';
 
-# Mail title
-my $subject = '【見積もり】木本システム';
-
 # Errors
 my @errors;
 
@@ -94,6 +91,10 @@ EOS
 my $res_data = {};
 
 unless (@errors) {
+
+  # Mail title
+  my $subject = "【見積もり】${company_name} ${staff_name}様";
+
   # Mail body
   my $mail_body = <<"EOS";
 会社名: $company_name
@@ -178,7 +179,7 @@ EOS
     Type     => 'TEXT',
     Data     => encode('UTF-8', $mail_body),
   );
-  $msg->send
+  $msg->send;
 }
 
 # JSON response
