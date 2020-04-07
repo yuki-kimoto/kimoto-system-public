@@ -255,6 +255,7 @@
     color:#444;
     padding:10px 0 0 0;
     letter-spacing:3px;
+    font-size:18px;
   }
   .index-mitumori-tel {
     text-align:center;
@@ -275,8 +276,16 @@
     color:#444;
     padding:10px;
     letter-spacing:1px;
+    font-size:17px;
   }
-
+  .index-mitumori-area {
+    text-align:center;
+    color:#444;
+    padding:10px;
+    letter-spacing:1px;
+    font-size:17px;
+  }
+  
   /* サービス */
   .services {
     padding-bottom:50px;
