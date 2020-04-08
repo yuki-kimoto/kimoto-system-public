@@ -143,12 +143,15 @@
     width:calc(50% - 20px);
     margin-left:10px;
     margin-right:10px;
-    padding:10px;
-    background:#2E75B6;
-    color:white;
-    text-align:center;
-    font-size:20px;
+  }
+  .index_service a,.index_service a:visited {
+    display:block;
+    width:100%;
     padding:30px 15px;
+    font-size:20px;
+    text-align:center;
+    color:white;
+    background:#2E75B6;
   }
   .index_service_title {
     font-size:25px;
