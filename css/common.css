@@ -635,15 +635,15 @@
    }
   .recruit h2 {
     font-size:32px;
-    background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
+    background-image:url(/images/recruit/recruit-image.jpg);
     background-position:50% 50%;
-    color:black;
     color:white;
-    padding-top:30px;
+    height:300px;
+    padding-top:140px;
   }
   .recruit h2 a, .recruit h2 a:visited {
     text-decoration:none;
@@ -654,7 +654,7 @@
     font-weight:bold;
     background: #1E65A6;
     background-size:4px 4px;
-    padding:13px 10px;
+    padding:13px 0;
     letter-spacing:1px;
     line-height:1.9;
     font-size:16px;
