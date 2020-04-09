@@ -967,6 +967,69 @@
     
   }
 
+  /* 開発実績 個別記事 */
+  .achieve_entry {
+    padding:30px 0;
+    width:calc(100% - 30px);
+    max-width:800px;
+    margin:0 auto;
+  }
+  .achieve_entry h2 {
+    text-align:center;
+    margin-bottom:30px;
+    font-size:32px;
+  }
+  .achieve_entry h2 a {
+    color:#333;
+    font-size:32px;
+  }
+  .achieve_entry h3 {
+    font-size:24px;
+    border-top:4px solid #2E75B6;
+    padding:15px 0px 14px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    background:#F5F5F5;
+    margin-top:30px;
+    margin-bottom:20px;
+  }
+  .achieve_entry_description {
+    text-align:center;
+  }
+  .achieve_entry ul {
+    margin-top:15px;
+  }
+  .achieve_entry li {
+    line-height:1.8;
+    border:1px solid #ddd;
+    padding:11px 0 10px 40px;
+    border-bottom:none;
+    background:url(/images/achieve/check.png) no-repeat;
+    background-size:16px;
+    background-position:13px 17px;
+  }
+  .achieve_entry li:last-child {
+    border-bottom:1px solid #ddd;
+  }
+  .achieve_entry table {
+    margin-top:15px;
+    border-collapse:collapse;
+    width:100%;
+  }
+  .achieve_entry td, .achieve_entry th {
+    border:1px solid #dddde0;
+    padding:10px 20px 10px 20px;
+  }
+  .achieve_entry th {
+    background:#f7fbff;
+    padding-top:12px;
+    width:220px;
+    text-align:right;
+  }
+  .achieve_entry p {
+    margin:20px 0;
+  }
+  
   /* ブログ記事 */
   .blog {
     padding:30px 0;
