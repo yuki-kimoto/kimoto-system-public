@@ -119,6 +119,42 @@
   .header_menu a:hover {
     opacity:0.8;
   }
+
+  .bottom {
+    display:none;
+  }
+  
+  .index_top {
+    background:#2E75B6;
+    width:100%;
+    border-bottom:1px solid #eef;
+    color:white;
+  }
+  .index_top ul {
+    max-width:960px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .index_top > ul > li:first-child {
+    width:310px;
+  }
+  .index_top > ul > li:last-child {
+    width:calc(100% - 310px);
+  }
+  .index_top img {
+    width:100%;
+    display:block;
+  }
+  .index_top h2 {
+    font-size:32px;
+    text-align:center;
+    padding-top:70px;
+  }
+  .index_top_description {
+    text-align:center;
+  }
+  
   
   /* トップページ サービス */
   .index_service {
@@ -1214,5 +1250,17 @@
   .index_service li {
     width:100%;
     margin:10px auto;
+  }
+  .index_top li:first-child {
+    width:100%;
+  }
+  .index_top  li:last-child {
+    width:100%;
+  }
+  .index_top > ul > li:first-child {
+    width:100%;
+  }
+  .index_top > ul > li:last-child {
+    width:100%;
   }
 }
