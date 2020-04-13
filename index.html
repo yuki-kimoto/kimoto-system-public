@@ -74,7 +74,12 @@ $(function() {
 
   </div>
   <div class="middle">
-    <div class="index">
+    <style>
+  .bottom {
+    display:none;
+  }
+</style>
+<div class="index">
   <div class="index_service">
     <h2>
       Perl Webシステム開発<br>パッケージ
@@ -106,47 +111,6 @@ $(function() {
           </div>
         </a>
       </li>
-    </ul>
-  </div>
-  
-  <div class="index_service">
-    <h2>
-      Perl Webシステム<br>運用保守パッケージ
-    </h2>
-    <ul>
-      <li>
-        <a href="/service/maint-lite.html">
-          <div class="index_service_title">
-            Perl Webシステム運用保守<br>ライトパッケージ
-          </div>
-          <div>
-            Perl Webシステム運用保守を<br>リーズナブルな価格で。
-          </div>
-          <div>
-            <b>基本価格 月額29万8000円</b>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="/service/maint-managed.html">
-          <div class="index_service_title">
-            Perl Webシステム運用保守<br>マネージドパッケージ
-          </div>
-          <div>
-            Perl Webシステム運用保守の<br>標準的なパッケージ。
-          </div>
-          <div>
-            <b>基本価格 月額59万8000円</b>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="index_service">
-    <h2>
-      Perl Webシステム開発<br>研修パッケージ
-    </h2>
-    <ul>
       <li>
         <a href="/service/training-corporate.html">
           <div class="index_service_title">
@@ -154,7 +118,7 @@ $(function() {
           </div>
           <div>
             企業様向けのPerl Webシステム開発研修。<br>
-            最大5名の少人数制。
+            最大5名の少人数制でノウハウが学べる。
           </div>
           <div>
             <b>１回 4時間 2万9800円 (午前or午後)</b>
@@ -163,12 +127,89 @@ $(function() {
       </li>
     </ul>
   </div>
-<!--
   <div class="index_service">
     <h2>
       Perl Webシステム開発の特徴
     </h2>
+    <div style="text-align:center">
+      <b>Webサーバーとして最大のシェアを持つLinuxとの相性がバツグン</b>
+      <div>
+        Perl Webシステム開発は、サーバーOSとして最大のシェアを持つLinuxとの相性がバツグンです。<br>
+        
+        Perlは、Unix生まれのプログラミング言語で、LinuxはUnix互換のオープンソース実装です。<br>
+        
+        Perlは、SSL通信の基盤「OpenSSL」、ソースコード管理「Git」、データベース「MySQL/MySQL」の補助ツールとして採用実績があります。
+      </div>
+    </div>
+    <div style="text-align:center">
+      <b>テキストデータ処理に最適化された開発効率と実行速度</b>
+      <div>
+        Webシステムは、クライアントとサーバーでテキストを交換する処理です。<br>
+        Perlは、最適化されており、正規表現とテキスト処理を短く書ける文法がプログラミング言語に組み込まれており、テキスト処理の開発効率が高いです。<br>
+        Perlには、リファレンスカウントGCと呼ばれる仕組みがあり、Webシステムの応答速度に最適化されています。
+      </div>
+    </div>
+    <div style="text-align:center">
+      <b>安心のセキュリティアップデート</b>
+      <div>
+        Perl Webシステム開発なら、セキュリティアップデートは簡単。<br>
+        Perlは後方互換性に優れたプログラミング言語で、Perlが発表された1987年から、2020年まで33年の後方互換性の実績があります。<br>
+        Webシステムに致命的な脆弱性が発見された場合に、ソースコードに変更を加えることなく、また加える必要がある場合でも最小限の変更で、セキュリティアップデートが可能です。
+      </div>
+    </div>
   </div>
+  <div class="index_service">
+    <h2>
+      木本システムの<br>Webシステム開発のよくある質問
+    </h2>
+    <div style="text-align:center">
+      <h3>常駐型のWebシステム開発は可能ですか?</h3>
+      <div>
+        東京都23区内と神奈川県横浜市で対応可能です。<br>木本システムの本社のある東京都港区の場合は、価格の５％割引キャンペーン。
+      </div>
+      <h3>リモートワークによるWebシステム開発は可能ですか?</h3>
+      <div>
+        はい、全国で対応可能です。skypeやlineなどのビデオを使っての対面での見積もりが可能です。
+      </div>
+      <h3>開発後の保守費用について教えてください。</h3>
+      <div>
+        開発後の保守費用は、Webシステム開発の価格と同じ価格になります。Perl Webシステム開発スタートアップパッケージの場合は、基本価格 月額29万8000円。Perl Webシステム開発マネージドパッケージの場合は、基本価格 月額59万8000円です。
+      </div>    
+      <h3>Webシステム開発にCGIを使いますか?</h3>
+      <div>
+        木本システムのPerl Webシステム開発は、クラウドに対応可能で、最大の実行速度を実現できる、リバースプロキシという仕組みを使って行います。<br>CGIを使ったWebシステムから、リバースプロキシを使たクラウド対応のWebシステムへの移行の案件は、対応可能です。
+      </div>
+      <h3>Webフレームワークは何を使いますか?</h3>
+      <div>
+        新規のWebシステム開発では、Webフレームワークとして開発効率の高いMojoliciousを使用します。<br>既存案件の場合は、どのフレームワークでも対応可能です。
+      </div>      
+      <h3>O/Rマッパーには何を使いますか?</h3>
+      <div>
+        新規のWebシステム開発では、O/Rマッパーとして、開発効率の高いDBIx::Customを使用します。<br>既存案件の場合は、どのO/Rマッパーでも対応可能です。
+      </div>      
+    </div>
+  </div>
+  <div class="index-mitumori" style="border-bottom:1px solid #eee">
+    <div class="index-mitumori-button">
+      <a href="/mail.html">Perl Webシステム開発の<br>お見積もりはこちら</a>
+    </div>
+    <div class="index-mitumori-area">
+      Webシステム開発の対応エリアは、東京都23区・神奈川県横浜市。<br>この他の全国地域でも、リモートワークによるWebシステム開発の相談可。
+    </div>
+    <div class="index-mitumori-tel-message">
+      お見積りは、お電話でもOK。
+    </div>
+    <div class="index-mitumori-tel">
+      <div class="index-mitumori-tel-number">
+        Tel. <a>03-6435-7439</a>
+      </div>
+    </div>
+    <div class="index-mitumori-jikan">
+      営業時間10:00～19:00（月～金営業、祝日・年末年始休み）
+    </div>
+    
+  </div>
+<!--
   <div class="index_service">
     <h2>
       Perl Webシステム開発で実現できること
@@ -199,7 +240,6 @@ $(function() {
       会社案内
     </h2>
     <ul>
-      <li><a href="/services.html">サービス</a></li>
       <li><a href="/corporate.html">会社情報</a></li>
       <li><a href="/achieve.html">開発実績</a></li>
       <li><a href="/area.html">対応エリア</a></li>

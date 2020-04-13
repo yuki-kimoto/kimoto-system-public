@@ -143,6 +143,7 @@
     width:calc(50% - 20px);
     margin-left:10px;
     margin-right:10px;
+    margin-bottom:20px;
   }
   .index_service a,.index_service a:visited {
     display:block;
