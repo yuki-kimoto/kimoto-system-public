@@ -132,10 +132,10 @@
     flex-wrap:wrap;
   }
   .index_top > ul > li:first-child {
-    width:285px;
+    width:280px;
   }
   .index_top > ul > li:last-child {
-    width:calc(100% - 285px);
+    width:calc(100% - 280px);
     padding-bottom:50px;
   }
   .index_top img {
@@ -145,7 +145,7 @@
   .index_top h2 {
     font-size:32px;
     text-align:center;
-    padding-top:65px;
+    padding-top:55px;
   }
   .index_top_description {
     text-align:center;
@@ -156,14 +156,15 @@
   
   /* トップページ サービス */
   .index_service {
-    padding:30px 0;
+    padding:50px 0;
     padding-bottom:50px;
     border-bottom:1px solid #ddd;
   }
   .index_service h2 {
-    font-size:29px;
+    font-size:31px;
     text-align:center;
     margin-bottom:30px;
+    letter-spacing:1px;
   }
   .index_service ul {
     width:calc(100% - 16px);
