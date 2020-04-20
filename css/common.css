@@ -132,10 +132,10 @@
     flex-wrap:wrap;
   }
   .index_top > ul > li:first-child {
-    width:280px;
+    width:275px;
   }
   .index_top > ul > li:last-child {
-    width:calc(100% - 280px);
+    width:calc(100% - 275px);
     padding-bottom:50px;
   }
   .index_top img {
