@@ -190,6 +190,58 @@
     font-size:25px;
     font-weight:bold;
   }
+
+  /* トップページ サービス */
+  .index_why_perl {
+    padding:30px 0 10px 0;
+    padding-bottom:30px;
+    border-bottom:1px solid #ddd;
+  }
+  .index_why_perl_check {
+    color:#3159D5;
+    font-size:105%;
+  }
+  .index_why_perl h2 {
+    font-size:31px;
+    text-align:center;
+    margin-bottom:20px;
+    letter-spacing:2px;
+  }
+  .index_why_perl h3 {
+    font-size:23px;
+    margin-bottom:8px;
+    letter-spacing:1px;
+  }
+  .index_why_perl p {
+    line-height:2;
+    font-size:17px;
+  }
+  .index_why_perl ul {
+    width:calc(100% - 16px);
+    max-width:960px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .index_why_perl li {
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+    border:1px solid #ddd;
+    padding:27px 25px;
+  }
+  .index_why_perl a,.index_why_perl a:visited {
+    display:block;
+    width:100%;
+    padding:30px 15px;
+    font-size:20px;
+    text-align:center;
+    color:white;
+    background:#2E75B6;
+  }
+  .index_why_perl_title {
+    font-size:25px;
+    font-weight:bold;
+  }
   
   /* トップページ ニュース */
   .index-news {
