@@ -1168,7 +1168,104 @@
   .blog p {
     margin:20px 0;
   }
-  
+
+  /* よくある質問 FAQ */
+  .faq h2 {
+    font-size:32px;
+    background: #1E65A6;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-position:50% 50%;
+    color:black;
+    color:white;
+    padding-top:30px;
+  }
+  .faq h2 a, .services h2 a:visited {
+    text-decoration:none;
+    letter-spacing:1px;
+  }
+
+  .faq h3 {
+    font-size:26px;
+    width:calc(100% - 30px);
+    margin-right:auto;
+    margin-left:auto;
+    letter-spacing:0.5px;
+    margin:15px 0 25px 0;
+    margin-top:40px;
+    color:#3c3c33;
+    text-align:center;
+  }
+  .faq_item {
+    width:calc(100% - 30px);
+    max-width:900px;
+    margin:0 auto 50px; auto;
+  }
+  .faq_question {
+    display:flex;
+    margin-bottom:10px;
+  }
+  .faq_question_header {
+    width:50px;
+    text-align:center;
+    font-weight:bold;
+    padding-top:15px;
+  }
+  .faq_question_header b {
+    display:block;
+    background:#f73434;
+    color:white;
+    width:30px;
+    height:30px;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align:-10px;
+    padding-top:3px;
+    border-radius:15px;
+  }
+  .faq_question_content {
+    border:1px solid #ddd;
+    padding:20px;
+    width:calc(100% - 50px);
+    color:#000;
+    background:#fcfeff;
+    line-height:1.8;
+    border-radius:5px;
+  }
+  .faq_answer {
+    display:flex;
+  }
+  .faq_answer_header {
+    width:50px;
+    text-align:center;
+    font-weight:bold;
+    padding-top:15px;
+  }
+  .faq_answer_header b {
+    display:block;
+    background:#a3a3a3;
+    color:white;
+    width:30px;
+    height:30px;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align:-10px;
+    padding-top:3px;
+    border-radius:15px;
+  }
+  .faq_answer_content {
+    border:1px solid #ddd;
+    padding:20px;
+    width:calc(100% - 50px);
+    background:#fcfeff;
+    line-height:1.8;
+    color:#111;
+    border-radius:5px;
+  }
+
+
 /* Tablet and Smart phone */
 @media only screen and (max-width:960px) {
   .header {
