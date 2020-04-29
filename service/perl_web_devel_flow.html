@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/images/kimoto-system-favicon.png">
+<link rel="stylesheet" type="text/css" href="/css/common.css">
+
+<script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+<link  type="text/css" rel="stylesheet" href="/js/google-code-prettify/prettify.css"/>
+<script>
+  $(function(){
+    // google code prettifyの有効化
+    $("pre").addClass("prettyprint");
+    function init(event){
+      prettyPrint();
+    }
+    if(window.addEventListener)window.addEventListener("load",init,false);
+    else if(window.attachEvent)window.attachEvent("onload",init);
+    
+    $(".to-top").click(function() {
+      // ページの一番上までスクロールさせます。
+      $('body, html').animate({scrollTop: 0}, 300, 'linear');;
+    });
+  });
+</script>
+
+<title>システムが完成するまでの流れ - Perl Webシステム開発なら木本システム株式会社</title>
+<meta name="description" content="Webシステム開発で実現したい内容が固まってきましたら、他社様のサービス内容・価格と比較して、お見積りをご検討ください。">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <script>
+$(function() {
+  $(window).on('resize', function () {
+    if ($(window).width() > 960) {
+      $('.header_menu').show();
+      $('.header_menu').css('display', 'flex');
+    }
+    else if ($(window).width() <= 960) {
+      $('.header_menu').hide();
+    }
+  });
+});
+</script>
+
+<!-- header -->
+<div class="header_site_title">
+  <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl Webシステム開発"></a>
+</div>
+<div class="header_company_name">
+  <p>Perl Webシステム開発の</p><p>木本システム株式会社</p>
+</div>
+<div class="header_menu_button" onclick="$('.header_menu').toggle()">
+  <img src="/images/header/menu-icon.png">
+</div>
+<ul class="header_menu">
+  <li><a href="/corporate.html">会社情報</a></li>
+  <li><a href="/message.html">代表挨拶</a></li>
+  <li><a href="/achieve.html">開発実績</a></li>
+  <li><a href="/recruit.html">採用情報</a></li>
+  <li><a href="/list.html">ブログ</a></li>
+  <li><a href="/mail.html" style="background:#ffaf26;color:white;">お見積り</a></li>
+</ul>
+
+      </div>
+      <div class="main">
+        <div class="content">
+          <div class="entry">
+  <div class="top">
+    <!-- top -->
+
+  </div>
+  <div class="middle">
+    <style>
+  /* 開発の流れ */
+  .service_perl_web_devel_flow {
+  }
+  .service_perl_web_devel_flow h2 {
+    font-size:32px;
+    background: #1E65A6;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-position:50% 50%;
+    color:black;
+    color:white;
+    padding-top:30px;
+  }
+  .service_perl_web_devel_flow h2 a, .service_perl_web_devel_flow h2 a:visited {
+    text-decoration:none;
+    letter-spacing:1px;
+  }
+  .service_perl_web_devel_flow_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+  .service_perl_web_devel_flow h3 {
+    width:calc(100% - 30px);
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:26px;
+    padding:0 0px 30px 0;
+    letter-spacing:1px;
+    color:#3c3c33;
+  }
+  .service_perl_web_devel_flow p {
+    width:calc(100% - 30px);
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.9;
+  }
+  .service_perl_web_devel_flow .background {
+    padding:50px 0 60px 0;
+  }
+  .service_perl_web_devel_flow .background:nth-child(2n) {
+    background:#fafafa;
+  }
+  .service_perl_web_devel_flow .number {
+    display:inline-block;
+    background:#24b53a;
+    border-radius:5px;
+    color:white;
+    width:35px;
+    height:35px;
+    margin-right:13px;
+    text-align:center;
+    vertical-align:2px;
+    font-size:20px;
+    padding:3px;
+  }
+</style>
+<div class="service_perl_web_devel_flow">
+  <h2>システムが完成するまでの流れ</h2>
+  <div class="service_perl_web_devel_flow_message">
+    システムが完成するまでの流れを解説
+  </div>
+  
+  <div class="background">
+    <h3><div class="number">1</div>Webシステム開発のご検討</h3>
+    <p>
+      Webシステム開発で実現したい内容が固まってきましたら、他社様のサービス内容・価格と比較して、お見積りをご検討ください。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">2</div>お見積もり</h3>
+    <p>
+      お見積りのページで、メールまたは電話でお見積りを依頼。翌営業日までに、電話でご連絡を差し上げます。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">3</div>お電話でのご相談</h3>
+    <p>
+      お電話で、実現したい内容と価格とスケジュールについて、お話しください。予算・スケジュールで実現可能であれば、責任者様への確認を得られましたら、コンサルティングに進みます
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">4</div>対面でのコンサルティング</h3>
+    <p>
+      東京23区、神奈川県横浜市でのコンサルティングをご希望の場合は、複数の日時をご提案いたします。場所は、御社様、近くのファミレス、喫茶店、木本システム本社を、ご選びください。また、Skype、Lineを利用したビデオ面談もご選択いただけます。東京23区、神奈川県横浜市以外の場合は、ビデオ面談になります。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">5</div>コンサルティングの内容</h3>
+    <p>
+      コンサルティングでは、リスニングを実施して、Webシステムで実現したい内容を、過不足なく、書き出して確認します。開発ボリュームから、可能なスケジュールをお伝えします。システム開発では、細かい部分で、実現したい内容が変更したり、追加したりすることが頻繁に起こりますが、対応可能です。ただし、その分スケジュールが後ろに伸びることを、ご了承ください。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">6</div>契約形態</h3>
+    <p>
+      システム開発の契約形態は、準委任契約型のシステム開発委託契約です。Webシステム開発の作業に対して報酬を支払う契約です。システムの完成を約束して、引き渡す請負契約とは異なるので、ご注意ください。Webシステム開発では、開発の段階で、機能の追加が頻繁に起こり、品質を確保した、決まった納期を約束することは難しいです。そのため、準委任契約のみを契約形態としています。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">7</div>契約内容の確認</h3>
+    <p>
+      木本システムの方で、システム開発委託契約書を作成します。契約内容をご確認ください。契約内容の細部は、調整することができます。開発内容、価格、開発開始日、期間をご確認ください。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">8</div>チャットを使ったコミュニケーション</h3>
+    <p>
+      ここからは、契約後、システム開発の始まりです。ご担当者様とチャットを使って、日々のコミュニケーションを行います。お客様が利用しているチャットシステムがあれば、ご指定ください。ない場合は、こちらから提案致します。ソフトウェア開発は、認識のずれが生じることで、開発期間が伸びる傾向にあります。日々のコミュニケーションで、認識のずれを減らすことが可能です。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">9</div>Webシステム開発</h3>
+    <p>
+      クラウドサーバーまたはVPSサーバーを使って、開発環境を構築します。担当者様は、Webブラウザ上から、日々開発されている内容をチェックして、チャット上で、質問や希望を伝えることができます。木本システムの開発者の方からも、必要な質問を日々繰り返し、それをフィードバックして開発を行っていきます。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">10</div>機能と品質の向上</h3>
+    <p>
+      Webシステム開発が進んできて、リリース可能な状態になるまで、機能と品質を向上させていきます。可能なスケジュールの中で、機能と品質が満たされれば、本番環境へリリースです。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">11</div>本番環境へリリース</h3>
+    <p>
+      待ちに待った本番環境へリリースです。サービスや業務に支障がでる不具合が発生した場合は、当日中に対応します。
+    </p>
+  </div>
+  <div class="background">
+    <h3><div class="number">12</div>継続的な保守開発</h3>
+    <p>
+      継続的な保守開発が必要な場合は、同一の基本価格で、契約を継続することが可能です。オプションサービスの追加・変更・削除も対応できます。
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="bottom">
+    <!-- bottom -->
+  <div class="index-mitumori">
+    <div class="index-mitumori-button">
+      <a href="/mail.html">Perl Webシステム開発の<br>お見積もりはこちら</a>
+    </div>
+
+    <div class="index-mitumori-area">
+      Webシステム開発の対応エリアは、東京都23区・神奈川県横浜市。<br>この他の全国地域でも、リモートワークによるWebシステム開発の相談可。
+    </div>
+
+    <div class="index-mitumori-tel-message">
+      お見積りは、お電話でもOK。
+    </div>
+
+    <div class="index-mitumori-tel">
+      <div class="index-mitumori-tel-number">
+        Tel. <a>03-6435-7439</a>
+      </div>
+    </div>
+
+    <div class="index-mitumori-jikan">
+      営業時間10:00～19:00（月～金営業、祝日・年末年始休み）
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+
+        </div>
+        <div class="side">
+          <!-- side -->
+
+        </div>
+      </div>
+      <div class="footer">
+        <!-- footer -->
+
+<div>
+<b>Perl Webシステム開発<br>木本システム株式会社</b>
+</div>
+<div>
+  Copyright © Kimoto System Co.,Ltd.
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>
