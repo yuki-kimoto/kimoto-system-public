@@ -153,7 +153,22 @@
     margin-top:25px;
   }
   
-  
+  .index_link_allow {
+  }
+  .index_link_allow b {
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    font-weight:normal;
+    padding-top:9px;
+    font-size:22px;
+    background:#1fa347;
+    color:white;
+    width:50px;
+    height:50px;
+    border-radius:25px;
+  }
   /* トップページ サービス */
   .index_service {
     padding:50px 0;
@@ -227,16 +242,15 @@
     margin-right:10px;
     margin-bottom:10px;
     border:1px solid #ddd;
-    padding:27px 25px;
   }
   .index_why_perl a,.index_why_perl a:visited {
+    padding:27px 25px;
     display:block;
     width:100%;
     padding:30px 15px;
     font-size:20px;
     text-align:center;
-    color:white;
-    background:#2E75B6;
+    color:#333;
   }
   .index_why_perl_title {
     font-size:25px;
@@ -465,6 +479,72 @@
     margin-right:10px;
   }
 
+  /* 開発の流れ */
+  .service_perl_web_devel_flow {
+  }
+  .service_perl_web_devel_flow h2 {
+    font-size:32px;
+    background: #1E65A6;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-position:50% 50%;
+    color:black;
+    color:white;
+    padding-top:30px;
+  }
+  .service_perl_web_devel_flow h2 a, .service_perl_web_devel_flow h2 a:visited {
+    text-decoration:none;
+    letter-spacing:1px;
+  }
+  .service_perl_web_devel_flow_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+  .service_perl_web_devel_flow h3 {
+    width:calc(100% - 30px);
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:26px;
+    padding:0 0px 30px 0;
+    letter-spacing:1px;
+    color:#3c3c33;
+  }
+  .service_perl_web_devel_flow p {
+    width:calc(100% - 30px);
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.9;
+  }
+  .service_perl_web_devel_flow .background {
+    padding:50px 0 60px 0;
+  }
+  .service_perl_web_devel_flow .background:nth-child(2n) {
+    background:#fafafa;
+  }
+  .service_perl_web_devel_flow .number {
+    display:inline-block;
+    background:#24b53a;
+    border-radius:5px;
+    color:white;
+    width:35px;
+    height:35px;
+    margin-right:13px;
+    text-align:center;
+    vertical-align:2px;
+    font-size:20px;
+    padding:3px;
+  }
 
   /* 開発実績 */
   .achieve {
