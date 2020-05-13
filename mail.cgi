@@ -25,14 +25,14 @@ my @errors;
 my $company_name = $q->param('company_name');
 $company_name = decode('UTF-8', $company_name);
 unless (length $company_name) {
-  push @errors, "会社名 (個人事業主様の場合は屋号)を入力してください。";
+  push @errors, "会社名を入力してください。";
 }
 
 # 担当者様名
 my $staff_name = $q->param('staff_name');
 $staff_name = decode('UTF-8', $staff_name);
 unless (length $staff_name) {
-  push @errors, "担当者様名 (個人事業主様の場合は氏名)を入力してください。";
+  push @errors, "担当者様名を入力してください。";
 }
 
 # メールアドレス
@@ -51,35 +51,11 @@ unless (length $tel) {
   push @errors, "電話番号を入力してください。";
 }
 
-# サービス
-my $service = $q->param('service');
-$service = decode('UTF-8', $service);
-
-unless ($service) {
-  push @errors, "サービス・基本価格を選択してください。";
-}
-
-# 開発期間
-my $period = $q->param('period');
-$period = decode('UTF-8', $period);
-
-unless ($period > 0) {
-  push @errors, "開発期間を選択してください。";
-}
-
-# 業種
-my $industry = $q->param('industry');
-$industry = decode('UTF-8', $industry);
-
-unless ($industry) {
-  push @errors, "業種を選択してください。";
-}
-
 # 実現したいWebシステムの内容を記入
 my $message = $q->param('message');
 $message = decode('UTF-8', $message);
 unless (length $message) {
-  push @errors, "実現したいWebシステムの内容を入力してください。";
+  push @errors, "お問い合わせ内容を入力してください。";
 }
 
 # Response
@@ -93,7 +69,7 @@ my $res_data = {};
 unless (@errors) {
 
   # Mail title
-  my $subject = "【見積もり】${company_name} ${staff_name}様";
+  my $subject = "【お問い合わせ】${company_name} ${staff_name}様";
 
   # Mail body
   my $mail_body = <<"EOS";
@@ -101,10 +77,7 @@ unless (@errors) {
 担当者様名: $staff_name
 メールアドレス: $email
 電話番号: $tel
-サービス: $service
-開発期間: ${period}ヵ月
-業種: $industry
-実現したいWebシステムの内容を記入:
+お問い合わせ内容
 
 $message
 EOS
@@ -133,18 +106,15 @@ else {
   $res_data->{success} = 1;
   
   # 自動返信メール
-  my $subject = 'お見積り内容 - Perl Webシステム開発の木本システム株式会社';
+  my $subject = 'お問い合わせ内容 - Perl Webシステム開発の木本システム株式会社';
   my $mail_body = <<"EOS";
-お見積りを以下の内容で受け付けました。
+お問い合わせを以下の内容で受け付けました。
 
 会社名: $company_name
 担当者様名: $staff_name
 メールアドレス: $email
 電話番号: $tel
-サービス: $service
-開発期間: ${period}ヵ月
-業種: $industry
-実現したいWebシステムの内容を記入:
+お問い合わせ内容:
 
 $message
 
