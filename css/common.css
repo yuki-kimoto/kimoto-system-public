@@ -59,7 +59,7 @@
   .header {
     background:#fff;
     display:flex;
-    height:53px;
+    height:60px;
     border-bottom:1px solid #cccccf;
     position:fixed;
     width:100%;
@@ -74,7 +74,7 @@
     display:block;
     width:100%;
     text-align:center;
-    padding:11px 0;
+    padding:14px 0 0 0;
     height:100%;
   }
   .header_company_name {
@@ -82,13 +82,13 @@
     background:white;
     font-size:14px;
     color:#666;
-    padding-top:16px;
-    padding-left:20px;
+    padding-top:10px;
+    padding-left:34px;
+    line-height:1.4;
   }
   .header_company_name p {
-    display:inline;
+    display:block;
   }
-
   .header_site_title img {
     width:95px;
     vertical-align:middle;
@@ -108,7 +108,7 @@
     display:block;
     width:100%;
     height:100%;
-    padding-top:17px;
+    padding-top:21px;
     display:block;
     color:#444;
     font-size:14px;
@@ -1423,13 +1423,16 @@
   }
   .header_menu_button {
     display:block;
-    width:52px;
+    width:58px;
     background:#2E75B6;
     cursor:pointer;
     border-bottom:1px solid #ddd;
   }
+  .header_menu_button {
+    height:100%;
+  }
   .header_menu_button img {
-    width:100%;
+    height:100%;
   }
   
   .header_menu {
@@ -1463,9 +1466,8 @@
     width:100%;
   }
   .header_company_name {
-    width:calc(100% - 120px - 52px);
+    width:calc(100% - 120px - 58px);
     border-bottom:1px solid #eeeeef;
-    padding-top:7px;
     padding-left:0;
     padding-right:0;
     text-align:center;

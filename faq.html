@@ -51,7 +51,7 @@ $(function() {
   <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl Webシステム開発"></a>
 </div>
 <div class="header_company_name">
-  <p>Perl Webシステム開発の</p><p>木本システム株式会社</p>
+  <p>Perl Webシステム開発</p><p>木本システム株式会社</p>
 </div>
 <div class="header_menu_button" onclick="$('.header_menu').toggle()">
   <img src="/images/header/menu-icon.png">
@@ -117,11 +117,21 @@ $(function() {
   <div class="faq_item">
     <div class="faq_question">
       <div class="faq_question_header"><b>Q</b></div>
+      <div class="faq_question_content">Perlは、ソースコードが汚くなって、メンテナンス性が下がりませんか?</div>
+    </div>
+    <div class="faq_answer">
+      <div class="faq_answer_header"><b>A</b></div>
+      <div class="faq_answer_content">バージョン5.6以降のPerlでは、Perlの緩やかな文法を許可しないstrictとwarningsという機能が追加されています。この機能を有効にすれば、メンテナンスしやすいソースコードが書けます。保守性に関して心配をされるお客様も多いので、ソースコードがシンプルで整えられれていることついては、常に気遣うようにしています。</div>
+    </div>
+  </div>
+  <div class="faq_item">
+    <div class="faq_question">
+      <div class="faq_question_header"><b>Q</b></div>
       <div class="faq_question_content">Webシステム開発にCGIを使いますか?</div>
     </div>
     <div class="faq_answer">
       <div class="faq_answer_header"><b>A</b></div>
-      <div class="faq_answer_content">木本システムのPerl Webシステム開発は、クラウドに対応可能で、最大の実行速度を実現できる、リバースプロキシという仕組みを使って行います。CGIを使ったWebシステムから、リバースプロキシを使たクラウド対応のWebシステムへの移行の案件は、対応可能です。</div>
+      <div class="faq_answer_content">現代的なPerlのWebシステム開発では、クラウドサーバーに対応可能で、最大の実行速度を実現できる、リバースプロキシという仕組みを使います。CGIを使った既存のWebシステム改修は、リバースプロキシを使用したクラウドサーバー対応のWebシステムへの移行という条件つきで、対応可能です。</div>
     </div>
   </div>
   <div class="faq_item">
@@ -132,16 +142,6 @@ $(function() {
     <div class="faq_answer">
       <div class="faq_answer_header"><b>A</b></div>
       <div class="faq_answer_content">新規のWebシステム開発では、Webフレームワークとして開発効率の高いMojoliciousというライブラリを使用します。既存案件の場合は、どのフレームワークでも対応可能です。</div>
-    </div>
-  </div>
-  <div class="faq_item">
-    <div class="faq_question">
-      <div class="faq_question_header"><b>Q</b></div>
-      <div class="faq_question_content">O/Rマッパーには何を使いますか?</div>
-    </div>
-    <div class="faq_answer">
-      <div class="faq_answer_header"><b>A</b></div>
-      <div class="faq_answer_content">新規のWebシステム開発では、O/Rマッパーとして、開発効率の高いDBIx::Customというライブラリを使用します。既存案件の場合は、どのO/Rマッパーでも対応可能です。</div>
     </div>
   </div>
 <div>
