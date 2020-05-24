@@ -106,7 +106,7 @@ else {
   $res_data->{success} = 1;
   
   # 自動返信メール
-  my $subject = 'お問い合わせ内容 - Perl Webシステム開発の木本システム株式会社';
+  my $subject = 'お問い合わせ内容 - Perl システム開発の木本システム株式会社';
   my $mail_body = <<"EOS";
 お問い合わせを以下の内容で受け付けました。
 

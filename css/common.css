@@ -388,7 +388,7 @@
     font-size:17px;
   }
 
-  /* Perl Webシステム開発の理由 */
+  /* Perl システム開発の理由 */
   .reason_entry {
     padding-bottom:50px;
   }
@@ -536,6 +536,64 @@
   .services li img {
     vertical-align:-17px;
     margin-right:10px;
+  }
+
+  /* サービス紹介 */
+  .service_entry {
+    padding-bottom:50px;
+  }
+  .service_entry h2 {
+    font-size:32px;
+    background: #1E65A6;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-position:50% 50%;
+    color:black;
+    color:white;
+    padding-top:30px;
+  }
+  .service_entry h2 a, .service_entry h2 a:visited {
+    text-decoration:none;
+    letter-spacing:1px;
+  }
+  .service_entry_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+  .service_entry h3 {
+    font-size:26px;
+    padding:16px 0px 15px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    margin-top:40px;
+    color:#3c3c33;
+    text-align:center;
+  }
+  .service_entry h4 {
+    font-size:18px;
+    font-weight:bold;
+    padding:6px 0px 4px 5px;
+    letter-spacing:0.5px;
+    margin:15px 0 5px 0;
+  }
+  .service_entry p {
+    font-size:16px;
+    color:#111;
+    margin:5px 0;
+    line-height:1.9;
+    width:100%;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
   }
 
   /* 開発の流れ */
