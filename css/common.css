@@ -118,7 +118,10 @@
   .header_menu a:hover {
     opacity:0.8;
   }
-
+  
+  .index {
+    background:#F8F9FA;
+  }
   .index_top {
     background:#2E75B6;
     width:100%;
@@ -173,7 +176,6 @@
   .index_service {
     padding:50px 0;
     padding-bottom:50px;
-    border-bottom:1px solid #ddd;
   }
   .index_service h2 {
     font-size:31px;
@@ -198,8 +200,10 @@
     padding:30px 15px;
     font-size:20px;
     text-align:center;
-    color:white;
-    background:#2E75B6;
+    color:#333;
+    border:1px solid #ddd;
+    border-radius:5px;
+    background:white;
   }
   .index_service_title {
     font-size:25px;
@@ -251,6 +255,7 @@
     font-size:20px;
     text-align:center;
     color:#333;
+    background:white;
   }
   .index_why_perl_title {
     font-size:25px;
@@ -260,7 +265,6 @@
   /* トップページ ニュース */
   .index-news {
     padding:50px 0;
-    border-bottom:1px solid #eeeeef;
   }
   .index-news h2 {
     text-align:center;
@@ -294,7 +298,7 @@
     margin-bottom:30px;
   }
   .index-content-list a, .index-content-list a:visited {
-    color:#333;
+    color:#000;
     display:block;
   }
   .index-content-list ul {

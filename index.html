@@ -80,72 +80,6 @@ $(function() {
 <p>
   -->
 </p>
-<style>
-  /* トップページ 見積もり */
-  .index-top-toiawase {
-    border-top:1px solid #eeeeef;
-    padding-top:60px;
-    padding-bottom:60px;
-  }
-  .index-top-toiawase h2 {
-    font-size:36px;
-    text-align:center;
-    letter-spacing:8px;
-    padding-bottom:25px;
-  }
-  .index-top-toiawase-button {
-    text-align:center;
-  }
-  .index-top-toiawase-button a {
-    display:block;
-    background:#ffac47;
-    color:white;
-    font-size:28px;
-    padding:16px 0;
-    border-radius:5px;
-    margin-bottom:25px;
-    width:calc(100% - 30px);
-    max-width:650px;
-    margin-left:auto;
-    margin-right:auto;
-    letter-spacing:5px;
-  }
-  .index-top-toiawase-tel-message {
-    text-align:center;
-    color:#444;
-    padding:10px 0 0 0;
-    letter-spacing:3px;
-    font-size:18px;
-  }
-  .index-top-toiawase-tel {
-    text-align:center;
-    color:white;
-  }
-  .index-top-toiawase-tel-number {
-    font-size:25px;
-    border-bottom:1px dashed white;
-    display:inline-block;
-    padding:5px 5px 0px 5px;
-  }
-  .index-top-toiawase-tel-number a {
-    letter-spacing:8px;
-    font-size:30px;
-    color:white;
-  }
-  .index-top-toiawase-jikan {
-    text-align:center;
-    color:white;
-    padding:10px;
-    letter-spacing:1px;
-    font-size:17px;
-  }
-  .index-top-toiawase-area {
-    text-align:center;
-    padding:10px;
-    letter-spacing:1px;
-    font-size:17px;
-  }
-</style>
 <div class="index">
   <div class="index_top">
     <ul>
@@ -156,27 +90,96 @@ $(function() {
         <h2>
           Perl システム開発<br>木本システム株式会社
         </h2>
-        <div class="index-top-toiawase-button">
-          <a href="/mail.html">お問い合わせはこちら</a>
-        </div>
-        <div class="index-top-toiawase-tel">
-          <div class="index-top-toiawase-tel-number">
-            Tel. <a>03-6435-7439</a>
-          </div>
-        </div>
-        <div class="index-top-toiawase-jikan">
-          営業時間10:00～19:00（月～金営業、祝日・年末年始休み）
+        <div class="index_top_description">
+          システム開発とLinuxサーバー管理をPerlで行い<br>コストパフォーマンスの良い<br>セキュアなシステム開発サービスをご提供します。
         </div>
       </li>
     </ul>
   </div>
-  <div class="index_why_perl">
-    <div style="text-align:center;margin-bottom:15px;">
-      <span style="padding:5px;font-size:16px;color:#ff5219;text-align:center;border-bottom:1px solid #999;">The Reason to choose Perl System Development</span>
+<!-- bottom -->
+  <div class="index-mitumori">
+    <div class="index-mitumori-button">
+      <a href="/mail.html">システム開発の<br>お問い合わせはこちら</a>
     </div>
-    
+    <div class="index-mitumori-area">
+      システム開発の対応エリアは、東京都23区・神奈川県横浜市。<br>この他の全国地域でも、リモートワークによるシステム開発の相談可。
+    </div>
+    <div class="index-mitumori-tel-message">
+      お問い合わせは、お電話でもOK。
+    </div>
+    <div class="index-mitumori-tel">
+      <div class="index-mitumori-tel-number">
+        Tel. <a>03-6435-7439</a>
+      </div>
+    </div>
+    <div class="index-mitumori-jikan">
+      営業時間10:00～19:00（月～金営業、祝日・年末年始休み）
+    </div>
+  </div>
+  <div class="index_service">
     <h2>
-      Perl システム開発を選ぶ理由
+      システム開発の価格
+    </h2>
+    <ul>
+      <li>
+        <a href="/price/price1.html">
+          <div class="index_service_title">
+            タイムシェアリングサービス
+          </div>
+          <div>
+            実務に携わっているPerlの専門職のエンジニアが<br>
+            月20日・1日1時間をシステム開発の時間に当てるサービス。<br>
+            契約期間は、一ヵ月が単位。
+          </div>
+          <div>
+            <b>基本価格 月額20万円(単価1万円×1時間×20日)</b>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/price/price2.html">
+          <div class="index_service_title">
+            スタートアップサービス
+          </div>
+          <div>
+            システム開発を<br>リーズナブルな価格で。
+          </div>
+          <div>
+            <b>基本価格 月額32万円(単価5000円×4時間×16日)</b>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/price/price3.html">
+          <div class="index_service_title">
+            マネージドサービス
+          </div>
+          <div>
+            品質とスケジュール重視のシステム開発の<br>標準的なパッケージ。
+          </div>
+          <div>
+            <b>基本価格 月額80万(単価1万円×4時間×20日)</b>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="index_service">
+    <h2>
+      お問い合わせからシステム完成までの流れ
+    </h2>
+    <ul>
+      <li>
+        <a href="/service/perl_devel_flow.html">
+          お問い合わせからご契約、システム開発の開始・完成までの流れを解説
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="index_why_perl">
+    <h2>
+      Perl システム開発の特徴
     </h2>
     <ul>
       <li>
@@ -197,72 +200,10 @@ $(function() {
       </li>
       <li>
         <a href="/reason/reason3.html">
-          <h3>安心の<span class="index_why_perl_check">セキュリティ</span>アップデートの理由は<br>プログラミング言語の安定性</h3>
+          <h3>セキュリティ脆弱性が発見された場合の<br>安心の<span class="index_why_perl_check">セキュリティ</span>アップデート</h3>
           <div class="index_link_allow">
             <b>&#x25B6;</b>
           </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="index_service">
-    <div style="text-align:center;margin-bottom:15px;">
-      <span style="padding:5px;font-size:16px;color:#ff5219;text-align:center;border-bottom:1px solid #999;">Perl Web Development Startup Package</span>
-    </div>
-    <h2>
-      リーズナブルな価格でのシステム開発なら<br>
-      Perl システム開発<br>
-      スタートアップパッケージ
-    </h2>
-    <ul>
-      <li>
-        <a href="/service/perl_devel_startup.html">
-          <div class="index_service_title">
-            Perl システム開発<br>スタートアップパッケージ
-          </div>
-          <div>
-            システム開発を<br>リーズナブルな価格で。
-          </div>
-          <div>
-            <b>基本価格 月額29万8000円</b>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="index_service">
-    <div style="text-align:center;margin-bottom:15px;">
-      <span style="padding:5px;font-size:16px;color:#ff5219;text-align:center;border-bottom:1px solid #999;">Perl Web Development Managed Package</span>
-    </div>
-    <h2>
-      品質とスケジュールが重要なシステム開発なら<br>
-      Perl システム開発<br>
-      マネージドパッケージ
-    </h2>
-    <ul>
-      <li>
-        <a href="/service/perl-web-devel-managed.html">
-          <div class="index_service_title">
-            Perl システム開発<br>マネージドパッケージ
-          </div>
-          <div>
-            品質とスケジュール重視のシステム開発の<br>標準的なパッケージ。
-          </div>
-          <div>
-            <b>基本価格 月額59万8000円</b>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="index_service">
-    <h2>
-      お問い合わせからシステム完成までの流れ
-    </h2>
-    <ul>
-      <li>
-        <a href="/service/perl_devel_flow.html">
-          お問い合わせからご契約、システム開発の開始・完成までの流れを解説
         </a>
       </li>
     </ul>
@@ -357,7 +298,7 @@ $(function() {
     <!-- bottom -->
   <div class="index-mitumori">
     <div class="index-mitumori-button">
-      <a href="/mail.html">Perl システム開発の<br>お問い合わせはこちら</a>
+      <a href="/mail.html">システム開発の<br>お問い合わせはこちら</a>
     </div>
 
     <div class="index-mitumori-area">
@@ -377,7 +318,6 @@ $(function() {
     <div class="index-mitumori-jikan">
       営業時間10:00～19:00（月～金営業、祝日・年末年始休み）
     </div>
-    
   </div>
 
   </div>
