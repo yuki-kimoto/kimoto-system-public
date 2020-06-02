@@ -19,11 +19,15 @@
   
   /* footer */
   .footer {
-    background:#2E75B6;
+    font-size:15px;
+    background:#F2F2F2;
     text-align:center;
     padding:20px 0 17px 0;
-    color:white;
+    color:#787890;
     font-size:16px;
+  }
+  .footer a, .footer a:visited {
+    color:#787890;
   }
   
   /* container */
@@ -289,7 +293,7 @@
   
   /* トップページ 会社案内 */
   .index-content-list {
-    padding:50px 0 60px 0;
+    padding:30px 0 30px 0;
   }
   .index-content-list h2 {
     text-align:center;
@@ -298,7 +302,7 @@
     margin-bottom:30px;
   }
   .index-content-list a, .index-content-list a:visited {
-    color:#000;
+    color:#787890;
     display:block;
   }
   .index-content-list ul {
@@ -311,7 +315,7 @@
   .index-content-list li {
     width:33.3%;
     text-align:center;
-    font-size:19px;
+    font-size:15px;
     line-height:1.8;
   }
   .index-content-list b {
@@ -319,9 +323,6 @@
     margin-bottom:5px;
     font-size:105%;
     display:block;
-  }
-  .index-content-list a, .index-content-list:visited {
-    color:#333;
   }
   .index-content-list a:hover {
     opacity:0.8;
