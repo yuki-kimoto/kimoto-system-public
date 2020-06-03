@@ -132,7 +132,7 @@
     color:white;
   }
   .index_top ul {
-    max-width:960px;
+    max-width:1310px;
     margin:0 auto;
     display:flex;
     flex-wrap:wrap;
@@ -148,10 +148,10 @@
     width:100%;
     display:block;
   }
-  .index_top h2 {
+  .index .index_top h2 {
     font-size:28px;
     text-align:center;
-    padding-top:45px;
+    padding-top:50px;
   }
   .index_top_description {
     text-align:center;
@@ -175,20 +175,24 @@
     height:50px;
     border-radius:25px;
   }
+  /* トップページ */
+  .index h2 {
+    font-size:24px;
+  }
+  
   /* トップページ サービス */
   .index_service {
     padding:50px 0;
     padding-bottom:50px;
   }
   .index_service h2 {
-    font-size:31px;
     text-align:center;
     margin-bottom:30px;
     letter-spacing:1px;
   }
   .index_service ul {
     width:calc(100% - 16px);
-    max-width:960px;
+    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -204,9 +208,9 @@
     font-size:20px;
     text-align:center;
     color:#333;
-    border:1px solid #ddd;
-    border-radius:5px;
+    border-radius:6px;
     background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,.14);
   }
   .index_service_title {
     font-size:25px;
@@ -240,7 +244,7 @@
   }
   .index_why_perl ul {
     width:calc(100% - 16px);
-    max-width:960px;
+    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -308,7 +312,7 @@
     display:flex;
     flex-wrap:wrap;
     width:calc(100% - 30px);
-    max-width:960px;
+    max-width:1310px;
     margin:0 auto;
   }
   .index-content-list li {
@@ -724,7 +728,7 @@
 
   .achieve ul {
     width:calc(100% - 16px);
-    max-width:960px;
+    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -949,7 +953,7 @@
   
   .recruit_description {
     width:100%;
-    max-width:960px;
+    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     color:#333;
@@ -982,7 +986,7 @@
     border-collapse: collapse;
     margin-left:15px;
     width:100%;
-    max-width:960px;
+    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     font-size:15px;
@@ -1012,7 +1016,7 @@
   }
   .recruit ul {
     width:100%;
-    max-width:960px;
+    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     margin-top:30px;
@@ -1080,7 +1084,7 @@
   }
   .message_description {
     width:100%;
-    max-width:960px;
+    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     color:#333;
@@ -1469,7 +1473,7 @@
 
 
 /* Tablet and Smart phone */
-@media only screen and (max-width:960px) {
+@media only screen and (max-width:1310px) {
   .header {
     flex-wrap:wrap;
     margin-bottom:10px;
