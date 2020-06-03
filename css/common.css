@@ -74,11 +74,10 @@
     width:180px;
   }
   .header_site_title a {
-    background:#2E75B6;
     display:block;
     width:100%;
     text-align:center;
-    padding:14px 0 0 0;
+    padding:11px 0 0 0;
     height:100%;
   }
   .header_company_name {
@@ -94,7 +93,7 @@
     display:block;
   }
   .header_site_title img {
-    width:95px;
+    width:125px;
     vertical-align:middle;
   }
   .header_menu_button {
@@ -1479,7 +1478,7 @@
   
   /* tags */
   .header_site_title {
-    width:120px;
+    width:130px;
   }
   .header_site_title a {
     border-bottom:1px solid #ddd;
@@ -1529,7 +1528,7 @@
     width:100%;
   }
   .header_company_name {
-    width:calc(100% - 120px - 58px);
+    width:calc(100% - 130px - 58px);
     border-bottom:1px solid #eeeeef;
     padding-left:0;
     padding-right:0;
