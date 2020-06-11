@@ -1,5 +1,13 @@
 /* Default settings */
   
+  /* パーツとして使っているクラス名 */
+  /*
+    .inside
+    .left
+    .right
+    .description
+  */
+  
   /* all */
   * {
     margin:0;
@@ -17,7 +25,45 @@
     text-decoration:none;
   }
   
-  /* h3のデフォルトを定義。必要があれば、カスタマイズする */
+  /* コンテンツを表示する中心の領域のデフォルト */
+  .inside {
+    max-width:1310px;
+    margin:0 auto;
+  }
+  
+  /* ページタイトル(h2)のデフォルトを定義。 */
+  h2 {
+    margin:0;
+    letter-spacing:1px;
+    text-align:center;
+    color:white;
+    font-size:26px;
+    line-height: 1.5;
+    
+    /* 一時的 */
+    padding-top:30px;
+    background: #1E65A6;
+  }
+  h2 a, h2 a:visited {
+    color:inherit;
+  }
+  
+  /* ページの解説のデフォルト */
+  .description {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.9;
+    font-size: 16px;
+    
+    /* 一時的 */
+    padding-top:30px;
+    padding-bottom:30px;
+    background: #1E65A6;
+  }
+
+  /* ページの副見出し(h3)のデフォルトを定義。必要があれば、カスタマイズする */
   h3 {
     font-size:24px;
     text-align:center;
@@ -40,7 +86,7 @@
   
   /* container */
   .container {
-    background:#F2EFE;
+    background:#F8F9FA;
   }
   
   /* main */
@@ -55,13 +101,8 @@
     width:100%;
   }
   
-  .content_max_width {
-    max-width:1310px;
-  }
-  
   /* entry */
   .entry {
-    background:white;
   }
   
   /* side */
@@ -77,7 +118,6 @@
     background:white;
   }
   .header_content {
-    max-width:1310px;
     margin:0 auto;
     display:flex;
     height:60px;
@@ -140,39 +180,46 @@
   }
   
   .index {
-    background:#F8F9FA;
   }
-  .index_top {
-    background:#2E75B6;
-    width:100%;
-    border-bottom:1px solid #eef;
+  
+  /* 左側に写真を表示するためのページトップ領域で使うコンポーネント */
+  .page_top_left_fix_image {
+    background: #1E65A6;
+  }
+  .page_top_left_fix_image > .inside {
     color:white;
-  }
-  .index_top ul {
-    max-width:1310px;
-    margin:0 auto;
     display:flex;
-    flex-wrap:wrap;
   }
-  .index_top > ul > li:first-child {
+  .page_top_left_fix_image > .inside > .left {
     width:250px;
   }
-  .index_top > ul > li:last-child {
+  .page_top_left_fix_image > .inside > .right {
     width:calc(100% - 250px);
-    padding-bottom:30px;
   }
-  .index_top img {
+  .page_top_left_fix_image > .inside > .right > h2 {
+    padding-top:30px;
+  }
+  .page_top_left_fix_image > .inside > .right > .description {
+    padding-top:15px;
+  }
+  .page_top_left_fix_image > .inside > .left > img {
     width:100%;
     display:block;
   }
-  .index .index_top h2 {
+
+  /* タイトル部分に写真を表示するページトップ領域で使うコンポーネント */
+  .page_top_title_image {
+    background: #1E65A6;
     text-align:center;
-    padding-top:50px;
   }
-  .index_top_description {
-    text-align:center;
-    font-size:23px;
-    margin-top:25px;
+  .page_top_title_image > h2 {
+    padding-top:30px;
+    height:300px;
+    padding-top:140px;
+    font-size:30px;
+  }
+  .page_top_title_image > .description {
+    padding-top:30px;
   }
   
   .index_link_allow {
@@ -191,10 +238,6 @@
     height:50px;
     border-radius:25px;
   }
-  /* トップページ */
-  .index h2 {
-  }
-  
   /* トップページ サービス */
   .index_service {
     padding:50px 0;
@@ -204,7 +247,6 @@
   }
   .index_service ul {
     width:calc(100% - 16px);
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -239,12 +281,10 @@
     color:#3159D5;
     font-size:105%;
   }
-  .index_why_perl h2 {
+  .index_why_perl h3 {
     text-align:center;
     margin-bottom:20px;
     letter-spacing:2px;
-  }
-  .index_why_perl h3 {
   }
   .index_why_perl p {
     line-height:2;
@@ -252,7 +292,6 @@
   }
   .index_why_perl ul {
     width:calc(100% - 16px);
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -281,10 +320,6 @@
   .index-news {
     padding:50px 0;
   }
-  .index-news h2 {
-    text-align:center;
-    letter-spacing:3px;
-  }
   .index-news table {
     width:calc(100% - 30px);
     max-width:800px;
@@ -305,11 +340,6 @@
   .index-content-list {
     padding:30px 0 30px 0;
   }
-  .index-content-list h2 {
-    text-align:center;
-    letter-spacing:3px;
-    margin-bottom:30px;
-  }
   .index-content-list a, .index-content-list a:visited {
     color:#787890;
     display:block;
@@ -318,7 +348,6 @@
     display:flex;
     flex-wrap:wrap;
     width:calc(100% - 30px);
-    max-width:1310px;
     margin:0 auto;
   }
   .index-content-list li {
@@ -342,11 +371,6 @@
     border-top:1px solid #eeeeef;
     padding-top:60px;
     padding-bottom:60px;
-  }
-  .index-mitumori h2 {
-    text-align:center;
-    letter-spacing:8px;
-    padding-bottom:25px;
   }
   .index-mitumori-button {
     text-align:center;
@@ -405,21 +429,6 @@
   .reason_entry {
     padding-bottom:50px;
   }
-  .reason_entry h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .reason_entry h2 a, .reason_entry h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
-  }
   .reason_entry_message {
     text-align:center;
     color:white;
@@ -455,22 +464,6 @@
   /* サービス */
   .services {
     padding-bottom:50px;
-  }
-  .services h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-    padding-bottom:30px;
-  }
-  .services h2 a, .services h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
   }
   .services_message {
     text-align:center;
@@ -539,21 +532,6 @@
   .service_entry {
     padding-bottom:50px;
   }
-  .service_entry h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .service_entry h2 a, .service_entry h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
-  }
   .service_entry_message {
     text-align:center;
     color:white;
@@ -588,21 +566,6 @@
   /* 開発の流れ */
   .service_perl_web_devel_flow {
   }
-  .service_perl_web_devel_flow h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .service_perl_web_devel_flow h2 a, .service_perl_web_devel_flow h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
-  }
   .service_perl_web_devel_flow_message {
     text-align:center;
     color:white;
@@ -615,6 +578,10 @@
     font-size:16px;
   }
   .service_perl_web_devel_flow h3 {
+    max-width:900px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
   }
   .service_perl_web_devel_flow p {
     width:calc(100% - 30px);
@@ -624,10 +591,7 @@
     line-height:1.9;
   }
   .service_perl_web_devel_flow .background {
-    padding:50px 0 60px 0;
-  }
-  .service_perl_web_devel_flow .background:nth-child(2n) {
-    background:#fafafa;
+    padding:40px 0 0px 0;
   }
   .service_perl_web_devel_flow .number {
     display:inline-block;
@@ -646,21 +610,6 @@
   /* 開発実績 */
   .achieve {
     padding-bottom:50px;
-  }
-  .achieve h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .achieve h2 a, .achieve h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
   }
   .achieve_message {
     text-align:center;
@@ -691,21 +640,22 @@
   }
 
   .achieve ul {
-    width:calc(100% - 16px);
-    max-width:1310px;
-    margin-left:auto;
-    margin-right:auto;
+    display:flex;
+    flex-wrap:wrap;
   }
   .achieve li {
     width:100%;
     border:1px solid #ddd;
     margin-top:4px;
     margin-bottom:4px;
+    border-radius:6px;
+    width:32.3%;
+    margin:5px 0.5%;
   }
   .achieve li a {
     display:block;
     width:100%;
-    padding:20px;
+    padding:30px;
     color:#33f;
     height:100%;
     color:#2F2F22;
@@ -720,34 +670,12 @@
 
   
   /* 会社情報 */
-  .corporate h2 {
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/corporate/corporate-image.jpg);
+
+  .corporate > .page_top_title_image > h2 {
+    background:url(/images/corporate/corporate-image.jpg);
     background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
-  }
-  .corporate h2 a, .corporate h2 a:visited {
-    text-decoration:none;
-  }
-  .corporate_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
   }
 
-  .corporate h3 {
-  }
   .corporate h4 {
     font-size:18px;
     font-weight:bold;
@@ -794,20 +722,6 @@
   }
 
   /* 学習教材 */
-  .learning h2 {
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/learning/learning-image.jpg);
-    background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
-  }
-  .learning h2 a, .learning h2 a:visited {
-    text-decoration:none;
-  }
   .learning_message {
     text-align:center;
     color:white;
@@ -872,20 +786,11 @@
    .recruit {
      padding-bottom:80px;
    }
-  .recruit h2 {
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/recruit/recruit-image.jpg);
+  .recruit > .page_top_title_image > h2 {
+    background:url(/images/recruit/recruit-image.jpg);
     background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
   }
-  .recruit h2 a, .recruit h2 a:visited {
-    text-decoration:none;
-  }
+
   .recruit_message {
     text-align:center;
     color:white;
@@ -900,7 +805,6 @@
   
   .recruit_description {
     width:100%;
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     color:#333;
@@ -926,7 +830,6 @@
     border-collapse: collapse;
     margin-left:15px;
     width:100%;
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     font-size:15px;
@@ -956,7 +859,6 @@
   }
   .recruit ul {
     width:100%;
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     margin-top:30px;
@@ -981,19 +883,6 @@
   /* 代表メッセージ */
   .message {
     padding-bottom:80px;
-  }
-  .message h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:20px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-  }
-  .message h2 a, .message h2 a:visited {
-    text-decoration:none;
   }
   .message_message {
     text-align:center;
@@ -1023,7 +912,6 @@
   }
   .message_description {
     width:100%;
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     color:#333;
@@ -1160,20 +1048,10 @@
   
   /* ブログ記事一覧(list.html) */
   .list {
-    padding:30px 0;
-    width:calc(100% - 30px);
-    max-width:800px;
-    margin:0 auto;
-  }
-  .list h2 {
-    text-align:center;
   }
   .list li {
     margin-bottom:15px;
     line-height:1.8;
-  }
-  .list h2 a {
-    color:#333;
   }
   .list_description {
     text-align:center;
@@ -1194,13 +1072,6 @@
     width:calc(100% - 30px);
     max-width:800px;
     margin:0 auto;
-  }
-  .achieve_entry h2 {
-    text-align:center;
-    margin-bottom:30px;
-  }
-  .achieve_entry h2 a {
-    color:#333;
   }
   .achieve_entry h3 {
   }
@@ -1245,17 +1116,12 @@
   .blog {
     padding:30px 0;
     width:calc(100% - 30px);
-    max-width:800px;
+    max-width:1310px;
     margin:0 auto;
   }
   .blog h2 {
-    text-align:center;
-    margin-bottom:30px;
-  }
-  .blog h2 a {
+    background:white;
     color:#333;
-  }
-  .blog h3 {
   }
   .blog_description {
     text-align:center;
@@ -1290,24 +1156,6 @@
   }
 
   /* よくある質問 FAQ */
-  .faq h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .faq h2 a, .services h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
-  }
-
-  .faq h3 {
-  }
   .faq_item {
     width:calc(100% - 30px);
     max-width:900px;
@@ -1447,27 +1295,8 @@
   }
 
   /* 採用情報 */
-  .recruit table {
-  }
-  
-  .recruit table tr {
-  }
-
   .recruit table th {
     width:140px;
-  }
-
-  .recruit table td {
-  }
-
-  .learning h2 {
-    background-position:35% 50%;
-    background-size:600px;
-  }
-
-  .corporate h2 {
-    background-position:90% 25%;
-    background-size:600px;
   }
   
   /* コンテンツ一覧 */
@@ -1476,11 +1305,6 @@
   }
 
   /* トップページ 見積もり */
-  .index-mitumori h2 {
-    letter-spacing:3px;
-  }
-  .index-mitumori-button {
-  }
   .index-mitumori-button a {
     font-size:26px;
     letter-spacing:3px;
@@ -1501,31 +1325,44 @@
   .index-mitumori-jikan {
     letter-spacing:0;
   }
+
+  /* 左側に写真を表示するためのページトップ領域で使うコンポーネント */
+  .page_top_left_fix_image {
+    background: #1E65A6;
+  }
+  .page_top_left_fix_image > .inside {
+    color:white;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .page_top_left_fix_image > .inside > .left {
+    width:100%;
+  }
+  .page_top_left_fix_image > .inside > .right {
+    width:100%;
+  }
+  .page_top_left_fix_image > .inside > .right > h2 {
+    padding-top:30px;
+  }
+  .page_top_left_fix_image > .inside > .right > .description {
+    padding-top:15px;
+  }
+  .page_top_left_fix_image > .inside > .left > img {
+    width:210px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:5px;
+  }
   
   /* トップページ サービス */
   .index_service li {
     width:100%;
     margin:10px auto;
   }
-  .index_top li:first-child {
-    width:100%;
-  }
-  .index_top  li:last-child {
-    width:100%;
-  }
-  .index_top > ul > li:first-child {
-    width:210px;
-    margin-left:auto;
-    margin-right:auto;
-    padding-top:5px;
-  }
-  .index_top > ul > li:last-child {
-    width:100%;
-  }
-  .index_top h2 {
-    padding-top:5px;
-  }
-  .index_top_description {
+  .index .page_description {
     margin-top:5px;
+  }
+  .achieve li {
+    width:100%;
   }
 }
