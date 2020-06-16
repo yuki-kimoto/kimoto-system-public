@@ -47,24 +47,26 @@ $(function() {
 </script>
 
 <!-- header -->
-<div class="inside header_content">
-  <div class="header_site_title">
-    <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl システム開発"></a>
+<div class="inside">
+  <div class="header_content">
+    <div class="header_site_title">
+      <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl システム開発"></a>
+    </div>
+    <div class="header_company_name">
+      <h1>Perl システム開発</p><p>木本システム株式会社</h1>
+    </div>
+    <div class="header_menu_button" onclick="$('.header_menu').toggle()">
+      <img src="/images/header/menu-icon.png">
+    </div>
+    <ul class="header_menu">
+      <li><a href="/corporate.html">会社情報</a></li>
+      <li><a href="/message.html">代表挨拶</a></li>
+      <li><a href="/achieve.html">開発実績</a></li>
+      <li><a href="/recruit.html">採用情報</a></li>
+      <li><a href="/news.html">ニュース</a></li>
+      <li><a href="/mail.html">問い合わせ</a></li>
+    </ul>
   </div>
-  <div class="header_company_name">
-    <h1>Perl システム開発</p><p>木本システム株式会社</h1>
-  </div>
-  <div class="header_menu_button" onclick="$('.header_menu').toggle()">
-    <img src="/images/header/menu-icon.png">
-  </div>
-  <ul class="header_menu">
-    <li><a href="/corporate.html">会社情報</a></li>
-    <li><a href="/message.html">代表挨拶</a></li>
-    <li><a href="/achieve.html">開発実績</a></li>
-    <li><a href="/recruit.html">採用情報</a></li>
-    <li><a href="/list.html">ニュース</a></li>
-    <li><a href="/mail.html">問い合わせ</a></li>
-  </ul>
 </div>
 
       </div>
@@ -81,64 +83,69 @@ $(function() {
     display:none;
   }
 </style>
-<div class="recruit">
-  <h2>対応エリア</h2>
-  <div class="recruit_message">
-    システム開発の対応可能エリア
+<div class="inside">
+  <div class="recruit">
+    <div class="page_top_basic">
+      <h2>対応エリア</h2>
+      <div class="recruit_message">
+        システム開発の対応可能エリア
+      </div>
+    </div>
+    
+    <div id="web_engeneer" style="height:1px"></div>
+    
+    <h3>東京都23区</h3>
+    <div class="recruit_description">
+      東京都23区のシステム開発の対応可能エリア
+    </div>
+    <table>
+      <tr>
+        <th>
+          東京都23区全域
+        </th>
+        <td>
+          足立区、墨田区、荒川区、世田谷区、板橋区、台東区、江戸川区、千代田区、大田区、中央区、葛飾区、豊島区、北区、中野区、江東区、練馬区、品川区、文京区、渋谷区、港区、新宿区、目黒区、杉並区
+        </td>
+      </tr>
+    </table>
+    <div id="web_assistant" style="height:1px"></div>
+    <h3>神奈川県横浜市</h3>
+    <div class="recruit_description">
+      神奈川県横浜市のシステム開発の対応可能エリア
+    </div>
+    
+    <table>
+      <tr>
+        <th>
+          神奈川県横浜市全域
+        </th>
+        <td>
+          青葉区、旭区、泉区、磯子区、神奈川区、金沢区、港南区、港北区、栄区、瀬谷区、都筑区、鶴見区、戸塚区、中区、西区、保土ケ谷区、緑区、南区
+        </td>
+      </tr>
+    </table>
+    <div id="jimu" style="height:1px"></div>
+    <h3>その他の全国地域</h3>
+    <div class="recruit_description">
+      その他の全国地域では、リモートワークでのシステム開発の相談可。
+    </div>
+    <table>
+      <tr>
+        <th>
+          その他の全国地域
+        </th>
+        <td>
+          リモートワークでの相談可
+        </td>
+      </tr>
+    </table>
   </div>
-  
-  <div id="web_engeneer" style="height:1px"></div>
-  
-  <h3>東京都23区</h3>
-  <div class="recruit_description">
-    東京都23区のシステム開発の対応可能エリア
-  </div>
-  <table>
-    <tr>
-      <th>
-        東京都23区全域
-      </th>
-      <td>
-        足立区、墨田区、荒川区、世田谷区、板橋区、台東区、江戸川区、千代田区、大田区、中央区、葛飾区、豊島区、北区、中野区、江東区、練馬区、品川区、文京区、渋谷区、港区、新宿区、目黒区、杉並区
-      </td>
-    </tr>
-  </table>
-  <div id="web_assistant" style="height:1px"></div>
-  <h3>神奈川県横浜市</h3>
-  <div class="recruit_description">
-    神奈川県横浜市のシステム開発の対応可能エリア
-  </div>
-  
-  <table>
-    <tr>
-      <th>
-        神奈川県横浜市全域
-      </th>
-      <td>
-        青葉区、旭区、泉区、磯子区、神奈川区、金沢区、港南区、港北区、栄区、瀬谷区、都筑区、鶴見区、戸塚区、中区、西区、保土ケ谷区、緑区、南区
-      </td>
-    </tr>
-  </table>
-  <div id="jimu" style="height:1px"></div>
-  <h3>その他の全国地域</h3>
-  <div class="recruit_description">
-    その他の全国地域では、リモートワークでのシステム開発の相談可。
-  </div>
-  <table>
-    <tr>
-      <th>
-        その他の全国地域
-      </th>
-      <td>
-        リモートワークでの相談可
-      </td>
-    </tr>
-  </table>
 </div>
 
   </div>
   <div class="bottom">
     <!-- bottom -->
+<div class="inside">
   <div class="index-mitumori">
     <div class="index-mitumori-button">
       <a href="/mail.html">お問い合わせはこちら</a>
@@ -158,6 +165,7 @@ $(function() {
       営業時間10:00～19:00（月～金営業、祝日・年末年始休み）
     </div>
   </div>
+</div>
 
   </div>
 </div>
@@ -171,7 +179,7 @@ $(function() {
       <div class="footer">
         <!-- footer -->
 
-  <div class="index-content-list">
+  <div class="footer_content">
     <ul>
       <li><a href="/corporate.html">会社情報</a></li>
       <li><a href="/achieve.html">開発実績</a></li>
@@ -179,7 +187,7 @@ $(function() {
       <li><a href="/area.html">対応エリア</a></li>
       <li><a href="/recruit.html">採用情報</a></li>
       <li><a href="/learning.html">研修教材</a></li>
-      <li><a href="/list.html">ブログ</a></li>
+      <li><a href="/news.html">ニュース</a></li>
     </ul>
   </div>
 

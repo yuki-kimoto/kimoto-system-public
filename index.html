@@ -48,24 +48,26 @@ $(function() {
 </script>
 
 <!-- header -->
-<div class="inside header_content">
-  <div class="header_site_title">
-    <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl システム開発"></a>
+<div class="inside">
+  <div class="header_content">
+    <div class="header_site_title">
+      <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl システム開発"></a>
+    </div>
+    <div class="header_company_name">
+      <h1>Perl システム開発</p><p>木本システム株式会社</h1>
+    </div>
+    <div class="header_menu_button" onclick="$('.header_menu').toggle()">
+      <img src="/images/header/menu-icon.png">
+    </div>
+    <ul class="header_menu">
+      <li><a href="/corporate.html">会社情報</a></li>
+      <li><a href="/message.html">代表挨拶</a></li>
+      <li><a href="/achieve.html">開発実績</a></li>
+      <li><a href="/recruit.html">採用情報</a></li>
+      <li><a href="/news.html">ニュース</a></li>
+      <li><a href="/mail.html">問い合わせ</a></li>
+    </ul>
   </div>
-  <div class="header_company_name">
-    <h1>Perl システム開発</p><p>木本システム株式会社</h1>
-  </div>
-  <div class="header_menu_button" onclick="$('.header_menu').toggle()">
-    <img src="/images/header/menu-icon.png">
-  </div>
-  <ul class="header_menu">
-    <li><a href="/corporate.html">会社情報</a></li>
-    <li><a href="/message.html">代表挨拶</a></li>
-    <li><a href="/achieve.html">開発実績</a></li>
-    <li><a href="/recruit.html">採用情報</a></li>
-    <li><a href="/list.html">ニュース</a></li>
-    <li><a href="/mail.html">問い合わせ</a></li>
-  </ul>
 </div>
 
       </div>
@@ -102,157 +104,164 @@ $(function() {
       </div>
     </div>
   </div>
-  <div class="inside index_service">
-    <h3>
-      システム開発の価格
-    </h3>
-    <ul>
-      <li>
-        <a href="/price/price1.html">
-          <div class="index_service_title">
-            タイムシェアリングサービス
-          </div>
-          <div>
-            実務に携わっているPerlの専門職のエンジニアが<br>
-            月20日・1日1時間をシステム開発の時間に当てるサービス。<br>
-            契約期間は、一ヵ月が単位。
-          </div>
-          <div>
-            <b>基本価格 月額20万円(単価1万円×1時間×20日)</b>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="/price/price2.html">
-          <div class="index_service_title">
-            スタートアップサービス
-          </div>
-          <div>
-            システム開発を<br>リーズナブルな価格で。
-          </div>
-          <div>
-            <b>基本価格 月額32万円(単価5000円×4時間×16日)</b>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="/price/price3.html">
-          <div class="index_service_title">
-            マネージドサービス
-          </div>
-          <div>
-            品質とスケジュール重視のシステム開発の<br>標準的なパッケージ。
-          </div>
-          <div>
-            <b>基本価格 月額80万(単価1万円×4時間×20日)</b>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="inside index_service">
-    <h3>
-      お問い合わせからシステム完成までの流れ
-    </h3>
-    <ul>
-      <li>
-        <a href="/service/perl_devel_flow.html">
-          お問い合わせからご契約、システム開発の開始・完成までの流れを解説
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="inside index_why_perl">
-    <h3>
-      Perl システム開発の特徴
-    </h3>
-    <ul>
-      <li>
-        <a href="/reason/reason1.html">
-          <h3>サーバーとして最適で無料で利用可能な<br><span class="index_why_perl_check">Linux</span>との相性がバツグン</h3>
-          <div class="index_link_allow">
-            <b>&#x25B6;</b>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="/reason/reason2.html">
-          <h3><span class="index_why_perl_check">テキストデータ処理</span>に最適化された<br>開発効率とパフォーマンス</h3>
-          <div class="index_link_allow">
-            <b>&#x25B6;</b>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="/reason/reason3.html">
-          <h3>セキュリティ脆弱性が発見された場合の<br>安心の<span class="index_why_perl_check">セキュリティ</span>アップデート</h3>
-          <div class="index_link_allow">
-            <b>&#x25B6;</b>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-<!--
-  <div class="inside index_service">
-    <h3>
-      開発実績
-    </h3>
-    <ul>
-      <li>
-        <a href="/achieve.html">
-          木本システム株式会社の開発実績
-        </a>
-      </li>
-    </ul>
-  </div>
-<p>
-  -->
-</p>
-  <div class="inside index_service">
-    <h3>
-      よくある質問
-    </h3>
-    <ul>
-      <li>
-        <a href="/faq.html">
-          システム開発のよくある質問への回答
-        </a>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="index-news">
-    <h3>
-      ニュース
-    </h3>
-    <div style="text-align:center;margin-top:10px;">
-      プレリリースなど企業最新情報
+  <h3>
+    システム開発の価格
+  </h3>
+  <div class="inside">
+    <div class="card_column3_basic">
+      <ul>
+        <li>
+          <a href="/price/price1.html">
+            <div>
+              <b>こつこつ開発パッケージ</b><br>
+            </div>
+            <div>
+              <b style="color:red">基本価格 月額20万円</b>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/price/price2.html">
+            <div>
+              <b>スタートアップパッケージ</b><br>
+            </div>
+            <div>
+              <b style="color:red">基本価格 月額32万円</b>
+            </div>
+            <div>
+              システム開発を<br>リーズナブルな価格で。
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/price/price3.html">
+            <div>
+              <b>マネージドパッケージ</b><br>
+            </div>
+            <div>
+              <b style="color:red">基本価格 月額80万</b>
+            </div>
+            <div>
+              品質とスケジュール重視の<br>標準的な価格のシステム開発。
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
-    <table>
-      <tr>
-        <th>2020年6月11日</th><td>Perlシステム開発の特徴を追加</td>
-      </tr>
-      <tr>
-        <th>2020年5月1日</th><td><a href="/blog/20200501072316.html">お問い合わせから開発までの流れ</a>を公開しました</td>
-      </tr>
-      <tr>
-        <th>2020年4月7日</th><td><a href="/blog/20200410072428.html">木本システム株式会社の開発実績を追加</a></td>
-      </tr>
-      <tr>
-        <th>2020年3月9日</th><td><a href="/message.html">代表からのメッセージ</a></td>
-      </tr>
-      <tr>
-        <th>2020年1月14日</th><td>木本裕紀(きもと ゆうき)が、東京都港区にて、業務システムの受託開発を開始。</td>
-      </tr>
-    </table>
+  </div>
+  
+  <div class="inside">
+    <div class="index_service">
+      <h3>
+        お問い合わせからシステム完成までの流れ
+      </h3>
+      <ul>
+        <li>
+          <a href="/service/perl_devel_flow.html">
+            お問い合わせからご契約、システム開発の開始・完成までの流れを解説
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="inside">
+    <div class="index_why_perl">
+      <h3>
+        Perl システム開発の特徴
+      </h3>
+      <ul>
+        <li>
+          <a href="/reason/reason1.html">
+            <h3>サーバーとして最適で無料で利用可能な<br><span class="index_why_perl_check">Linux</span>との相性がバツグン</h3>
+            <div class="index_link_allow">
+              <b>&#x25B6;</b>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/reason/reason2.html">
+            <h3><span class="index_why_perl_check">テキストデータ処理</span>に最適化された<br>開発効率とパフォーマンス</h3>
+            <div class="index_link_allow">
+              <b>&#x25B6;</b>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/reason/reason3.html">
+            <h3>セキュリティ脆弱性が発見された場合の<br>安心の<span class="index_why_perl_check">セキュリティ</span>アップデート</h3>
+            <div class="index_link_allow">
+              <b>&#x25B6;</b>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="inside">
+    <div class="index_service">
+      <h3>
+        開発実績
+      </h3>
+      <ul>
+        <li>
+          <a href="/achieve.html">
+            木本システム株式会社の開発実績
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="inside">
+    <div class="index_service">
+      <h3>
+        よくある質問
+      </h3>
+      <ul>
+        <li>
+          <a href="/faq.html">
+            システム開発のよくある質問への回答
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="inside">
+    <div class="index_news">
+      <h3>
+        ニュース
+      </h3>
+      <div style="text-align:center;margin-top:10px;">
+        プレリリースなど企業最新情報
+      </div>
+      <table>
+        <tr>
+          <th>2020年6月11日</th><td>Perlシステム開発の特徴を追加</td>
+        </tr>
+        <tr>
+          <th>2020年5月1日</th><td><a href="/blog/20200501072316.html">お問い合わせから開発までの流れ</a>を公開しました</td>
+        </tr>
+        <tr>
+          <th>2020年4月7日</th><td><a href="/blog/20200410072428.html">木本システム株式会社の開発実績を追加</a></td>
+        </tr>
+        <tr>
+          <th>2020年3月9日</th><td><a href="/message.html">代表からのメッセージ</a></td>
+        </tr>
+        <tr>
+          <th></th><td><a href="/news.html">ニュース一覧を見る »</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>
 
   </div>
   <div class="bottom">
     <!-- bottom -->
+<div class="inside">
   <div class="index-mitumori">
     <div class="index-mitumori-button">
       <a href="/mail.html">お問い合わせはこちら</a>
@@ -272,6 +281,7 @@ $(function() {
       営業時間10:00～19:00（月～金営業、祝日・年末年始休み）
     </div>
   </div>
+</div>
 
   </div>
 </div>
@@ -285,7 +295,7 @@ $(function() {
       <div class="footer">
         <!-- footer -->
 
-  <div class="index-content-list">
+  <div class="footer_content">
     <ul>
       <li><a href="/corporate.html">会社情報</a></li>
       <li><a href="/achieve.html">開発実績</a></li>
@@ -293,7 +303,7 @@ $(function() {
       <li><a href="/area.html">対応エリア</a></li>
       <li><a href="/recruit.html">採用情報</a></li>
       <li><a href="/learning.html">研修教材</a></li>
-      <li><a href="/list.html">ブログ</a></li>
+      <li><a href="/news.html">ニュース</a></li>
     </ul>
   </div>
 

@@ -47,24 +47,26 @@ $(function() {
 </script>
 
 <!-- header -->
-<div class="inside header_content">
-  <div class="header_site_title">
-    <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl システム開発"></a>
+<div class="inside">
+  <div class="header_content">
+    <div class="header_site_title">
+      <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl システム開発"></a>
+    </div>
+    <div class="header_company_name">
+      <h1>Perl システム開発</p><p>木本システム株式会社</h1>
+    </div>
+    <div class="header_menu_button" onclick="$('.header_menu').toggle()">
+      <img src="/images/header/menu-icon.png">
+    </div>
+    <ul class="header_menu">
+      <li><a href="/corporate.html">会社情報</a></li>
+      <li><a href="/message.html">代表挨拶</a></li>
+      <li><a href="/achieve.html">開発実績</a></li>
+      <li><a href="/recruit.html">採用情報</a></li>
+      <li><a href="/news.html">ニュース</a></li>
+      <li><a href="/mail.html">問い合わせ</a></li>
+    </ul>
   </div>
-  <div class="header_company_name">
-    <h1>Perl システム開発</p><p>木本システム株式会社</h1>
-  </div>
-  <div class="header_menu_button" onclick="$('.header_menu').toggle()">
-    <img src="/images/header/menu-icon.png">
-  </div>
-  <ul class="header_menu">
-    <li><a href="/corporate.html">会社情報</a></li>
-    <li><a href="/message.html">代表挨拶</a></li>
-    <li><a href="/achieve.html">開発実績</a></li>
-    <li><a href="/recruit.html">採用情報</a></li>
-    <li><a href="/list.html">ニュース</a></li>
-    <li><a href="/mail.html">問い合わせ</a></li>
-  </ul>
 </div>
 
       </div>
@@ -89,18 +91,19 @@ $(function() {
     </div>
   </div>
   <ul class="inside">
-    <li><a href="#web_engeneer">システム開発者</a></li>
+    <li><a href="#web_engeneer">システムエンジニア</a></li>
     <li><a href="#web_content">開発アシスタント</a></li>
-    <li><a href="#web_content">Perl Webコンテンツ開発アシスタント</a></li>
+    <li><a href="#sales_support">営業事務</a></li>
   </ul>
   
-  <div id="web_engeneer" style="height:1px"></div>
-  
-  <h3>システムエンジニア</h3>
-  <div class="recruit_description">
-    Perlを使ったシステム開発のお仕事の募集
+  <div class="inside">
+    <div id="web_engeneer" style="height:1px"></div>
+    <h3>システムエンジニア</h3>
+    <div class="recruit_description">
+      Perlを使ったシステム開発のお仕事の募集
+    </div>
   </div>
-  <table class="inside">
+  <table>
     <tr>
       <th>
         仕事内容
@@ -175,13 +178,15 @@ $(function() {
       </td>
     </tr>
   </table>
-  <div id="web_content" style="height:1px"></div>
-  <h3>開発アシスタント</h3>
-  <div class="recruit_description">
-    Perl システム開発アシスタントのお仕事の募集
-  </div>
   
-  <table class="inside">
+  <div class="inside">
+    <div id="web_content" style="height:1px"></div>
+    <h3>開発アシスタント</h3>
+    <div class="recruit_description">
+      Perl システム開発アシスタントのお仕事の募集
+    </div>
+  </div>
+  <table>
     <tr>
       <th>
         仕事内容
@@ -251,13 +256,15 @@ $(function() {
       </td>
     </tr>
   </table>
-  <div id="web_content" style="height:1px"></div>
-  <h3>営業事務</h3>
-  <div class="recruit_description">
-    木本システムの営業事務のお仕事
-  </div>
   
-  <table class="inside">
+  <div class="inside">
+    <div id="sales_support" style="height:1px"></div>
+    <h3>営業事務</h3>
+    <div class="recruit_description">
+      木本システムの営業事務のお仕事
+    </div>
+  </div>
+  <table>
     <tr>
       <th>
         仕事内容
@@ -271,7 +278,7 @@ $(function() {
         求められる能力
       </th>
       <td>
-        HTML・CSSで、簡易的なWebページを作成できる。<br>
+        Excel・Wordを使って、文章を作成することができる。
         前向きに情報発信ができる。
       </td>
     </tr>
@@ -332,6 +339,7 @@ $(function() {
   </div>
   <div class="bottom">
     <!-- bottom -->
+<div class="inside">
   <div class="index-mitumori">
     <div class="index-mitumori-button">
       <a href="/mail.html">お問い合わせはこちら</a>
@@ -351,6 +359,7 @@ $(function() {
       営業時間10:00～19:00（月～金営業、祝日・年末年始休み）
     </div>
   </div>
+</div>
 
   </div>
 </div>
@@ -364,7 +373,7 @@ $(function() {
       <div class="footer">
         <!-- footer -->
 
-  <div class="index-content-list">
+  <div class="footer_content">
     <ul>
       <li><a href="/corporate.html">会社情報</a></li>
       <li><a href="/achieve.html">開発実績</a></li>
@@ -372,7 +381,7 @@ $(function() {
       <li><a href="/area.html">対応エリア</a></li>
       <li><a href="/recruit.html">採用情報</a></li>
       <li><a href="/learning.html">研修教材</a></li>
-      <li><a href="/list.html">ブログ</a></li>
+      <li><a href="/news.html">ニュース</a></li>
     </ul>
   </div>
 

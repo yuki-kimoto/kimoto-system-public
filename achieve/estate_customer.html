@@ -28,7 +28,7 @@
 </script>
 
 <title>【開発実績】不動産顧客管理システム - Perlシステム開発の木本システム株式会社 Webシステム開発・業務システム開発</title>
-<meta name="description" content="不動産顧客管理システムは、不動産の購入希望の顧客をデータベースで管理するWebシステム。顧客に対応するスタッフがログインして、スタッフと顧客がメッセージを交換することができる。顧客の希望する物件やお気に入り条件を閲覧できる。物件の資料請求を一覧し、販売図面をオンラインで提供することができる。">
+<meta name="description" content="不動産顧客管理システムは、不動産の購入希望の顧客をデータベースで管理するWebシステム。顧客に対応するスタッフがログインして、スタッフと顧客がメッセージを交換することができる。">
   </head>
   <body>
     <div class="container">
@@ -48,24 +48,26 @@ $(function() {
 </script>
 
 <!-- header -->
-<div class="inside header_content">
-  <div class="header_site_title">
-    <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl システム開発"></a>
+<div class="inside">
+  <div class="header_content">
+    <div class="header_site_title">
+      <a href="/"><img src="/images/kimoto-system-logo.png" alt="Perl システム開発"></a>
+    </div>
+    <div class="header_company_name">
+      <h1>Perl システム開発</p><p>木本システム株式会社</h1>
+    </div>
+    <div class="header_menu_button" onclick="$('.header_menu').toggle()">
+      <img src="/images/header/menu-icon.png">
+    </div>
+    <ul class="header_menu">
+      <li><a href="/corporate.html">会社情報</a></li>
+      <li><a href="/message.html">代表挨拶</a></li>
+      <li><a href="/achieve.html">開発実績</a></li>
+      <li><a href="/recruit.html">採用情報</a></li>
+      <li><a href="/news.html">ニュース</a></li>
+      <li><a href="/mail.html">問い合わせ</a></li>
+    </ul>
   </div>
-  <div class="header_company_name">
-    <h1>Perl システム開発</p><p>木本システム株式会社</h1>
-  </div>
-  <div class="header_menu_button" onclick="$('.header_menu').toggle()">
-    <img src="/images/header/menu-icon.png">
-  </div>
-  <ul class="header_menu">
-    <li><a href="/corporate.html">会社情報</a></li>
-    <li><a href="/message.html">代表挨拶</a></li>
-    <li><a href="/achieve.html">開発実績</a></li>
-    <li><a href="/recruit.html">採用情報</a></li>
-    <li><a href="/list.html">ニュース</a></li>
-    <li><a href="/mail.html">問い合わせ</a></li>
-  </ul>
 </div>
 
       </div>
@@ -78,61 +80,80 @@ $(function() {
   </div>
   <div class="middle">
     <div class="achieve_entry">
-<h2>【開発実績】不動産顧客管理システム</h2>
-<p>
-  不動産顧客管理システムは、不動産の購入希望の顧客をデータベースで管理するWebシステム。顧客に対応するスタッフがログインして、スタッフと顧客がメッセージを交換することができる。顧客の希望する物件やお気に入り条件を閲覧できる。物件の資料請求を一覧し、販売図面をオンラインで提供することができる。
-</p>
-<h3>主要機能</h3>
-<p>
-  不動産顧客管理システムの主要機能。
-</p>
-<ul>
-  <li>物件資料請求管理</li>
-  <li>物件検索</li>
-  <li>スタッフ用ログイン機能</li>
-  <li>お気に入り物件閲覧</li>
-  <li>お気に入り条件閲覧</li>
-  <li>お気に入り条件マッチングメール送信</li>
-  <li>新着物件お知らせ</li>
-</ul>
-<h3>使用技術</h3>
-<p>
-  通信キヤリア間の通信料金の振り分けシステムの仕様技術。
-</p>
-<table>
-  <tr>
-    <th>Webサーバー</th><td>Apache</td>
-  </tr>
-  <tr>
-    <th>データベース</th><td>MariaDB/MySQL</td>
-  </tr>
-  <tr>
-    <th>サーバーOS</th><td>Linux/CentOS</td>
-  </tr>
-  <tr>
-    <th>プログラミング言語</th><td>Perl</td>
-  </tr>
-  <tr>
-    <th>Webフレームワーク</th><td>Mojolicious</td>
-  </tr>
-  <tr>
-    <th>Webデザイン</th><td>HTML5,CSS3,JavaScript,jQuery</td>
-  </tr>
-  <tr>
-    <th>ソースコード管理</th><td>Git/GitHub</td>
-  </tr>
-  <tr>
-    <th>ジョブ管理</th><td>cron</td>
-  </tr>
-  <tr>
-    <th>ホスティングサービス</th><td>さくらのクラウド</td>
-  </tr>
-</table>
+  <div class="page_top_basic">
+    <h2>【開発実績】不動産顧客管理システム</h2>
+    <div class="description">
+      <div class="inside">
+        不動産顧客管理システムは、不動産の購入希望の顧客をデータベースで管理するWebシステム。
+      </div>
+    </div>
+  </div>
+  <h3>システム概要</h3>
+  
+  <div class="inside">
+    <p>
+      不動産顧客管理システムは、不動産の購入希望の顧客をデータベースで管理するWebシステム。顧客に対応するスタッフがログインして、スタッフと顧客がメッセージを交換することができる。
+    </p>
+    <p>
+      顧客の希望する物件やお気に入り条件を閲覧できる。物件の資料請求を一覧し、販売図面をオンラインで提供することができる。
+    </p>
+  </div>
+  <h3>主要機能</h3>
+  <div class="inside">
+    <p>
+      不動産顧客管理システムの主要機能。
+    </p>
+    <ul>
+      <li>物件資料請求管理</li>
+      <li>物件検索</li>
+      <li>スタッフ用ログイン機能</li>
+      <li>お気に入り物件閲覧</li>
+      <li>お気に入り条件閲覧</li>
+      <li>お気に入り条件マッチングメール送信</li>
+      <li>新着物件お知らせ</li>
+    </ul>
+  </div>
+  <h3>使用技術</h3>
+  <div class="inside">
+    <p>
+      通信キヤリア間の通信料金の振り分けシステムの仕様技術。
+    </p>
+    <table>
+      <tr>
+        <th>Webサーバー</th><td>Apache</td>
+      </tr>
+      <tr>
+        <th>データベース</th><td>MariaDB/MySQL</td>
+      </tr>
+      <tr>
+        <th>サーバーOS</th><td>Linux/CentOS</td>
+      </tr>
+      <tr>
+        <th>プログラミング言語</th><td>Perl</td>
+      </tr>
+      <tr>
+        <th>Webフレームワーク</th><td>Mojolicious</td>
+      </tr>
+      <tr>
+        <th>Webデザイン</th><td>HTML5,CSS3,JavaScript,jQuery</td>
+      </tr>
+      <tr>
+        <th>ソースコード管理</th><td>Git/GitHub</td>
+      </tr>
+      <tr>
+        <th>ジョブ管理</th><td>cron</td>
+      </tr>
+      <tr>
+        <th>ホスティングサービス</th><td>さくらのクラウド</td>
+      </tr>
+    </table>
+  </div>
 </div>
 
   </div>
   <div class="bottom">
     <!-- bottom -->
+<div class="inside">
   <div class="index-mitumori">
     <div class="index-mitumori-button">
       <a href="/mail.html">お問い合わせはこちら</a>
@@ -152,6 +173,7 @@ $(function() {
       営業時間10:00～19:00（月～金営業、祝日・年末年始休み）
     </div>
   </div>
+</div>
 
   </div>
 </div>
@@ -165,7 +187,7 @@ $(function() {
       <div class="footer">
         <!-- footer -->
 
-  <div class="index-content-list">
+  <div class="footer_content">
     <ul>
       <li><a href="/corporate.html">会社情報</a></li>
       <li><a href="/achieve.html">開発実績</a></li>
@@ -173,7 +195,7 @@ $(function() {
       <li><a href="/area.html">対応エリア</a></li>
       <li><a href="/recruit.html">採用情報</a></li>
       <li><a href="/learning.html">研修教材</a></li>
-      <li><a href="/list.html">ブログ</a></li>
+      <li><a href="/news.html">ニュース</a></li>
     </ul>
   </div>
 
