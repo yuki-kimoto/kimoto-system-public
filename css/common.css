@@ -1010,17 +1010,16 @@
   
   /* ブログ記事 */
   .blog {
+    margin-top:30px;
     padding:30px 0;
     width:calc(100% - 30px);
     max-width:1310px;
     margin:0 auto;
+    background:white;
   }
   .blog h2 {
     background:white;
     color:#333;
-  }
-  .blog_description {
-    text-align:center;
   }
   .blog ul {
     margin-top:15px;
@@ -1049,6 +1048,7 @@
   }
   .blog p {
     margin:20px 0;
+    padding:20px;
   }
 
   /* よくある質問 FAQ */
