@@ -278,6 +278,41 @@
     height:100%;
   }
 
+  /* トップページ サービスメイン */
+  .index_service_main {
+    padding:50px 0;
+    padding-bottom:50px;
+  }
+  .index_service_main h3 {
+  }
+  .index_service_main ul {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .index_service_main li {
+    margin: 0 auto;
+    margin-bottom:20px;
+  }
+  .index_service_main a,.index_service_main a:visited {
+    display:block;
+    width:100%;
+    padding:40px 15px;
+    font-size:25px;
+    font-weight:bold;
+    text-align:center;
+    color:#303022;
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,.14);
+    line-height:2;
+    letter-spacing:2px;
+    color:#FFAF26;
+  }
+  .index_service_main_title {
+    font-size:16px;
+    font-weight:bold;
+  }
+
+
   /* トップページ サービス */
   .index_service {
     padding:50px 0;
