@@ -1059,12 +1059,7 @@
   }
   .blog li {
     line-height:1.8;
-    border:1px solid #ddd;
     padding:10px 20px;
-    border-bottom:none;
-  }
-  .blog li:last-child {
-    border-bottom:1px solid #ddd;
   }
   .blog .blog_table_column2 table {
     margin-top:15px;
