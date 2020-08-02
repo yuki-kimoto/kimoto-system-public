@@ -27,8 +27,7 @@
   });
 </script>
 
-<title>東京都で基本月額30万円でシステム開発ができるシステム開発会社 - Perlシステム開発の木本システム株式会社 Webシステム開発・業務システム開発</title>
-<meta name="description" content="木本システム株式会社は、東京都で基本月額30万円でシステム開発できるシステム開発会社です。">
+<title>技術情報 - Perlシステム開発の木本システム株式会社 Webシステム開発・業務システム開発</title>
   </head>
   <body>
     <div class="container">
@@ -60,11 +59,12 @@ $(function() {
       <img src="/images/header/menu-icon.png">
     </div>
     <ul class="header_menu">
-      <li><a href="/system-devel.html">システム開発</a></li>
-      <li><a href="/pgoramming-lessen.html">個人レッスン</a></li>
       <li><a href="/technology.html">技術情報</a></li>
       <li><a href="/achieve.html">開発実績</a></li>
+      <li><a href="/achieve.html">開発実績</a></li>
       <li><a href="/corporate.html">会社情報</a></li>
+      <li><a href="/message.html">代表挨拶</a></li>
+      <li><a href="/recruit.html">採用情報</a></li>
       <li><a href="/mail.html">問い合わせ</a></li>
     </ul>
   </div>
@@ -79,52 +79,29 @@ $(function() {
 
   </div>
   <div class="middle">
-    <div class="blog">
-<div class="inside"><h2><a href="/blog/20200728062745.html">東京都で基本月額30万円でシステム開発ができるシステム開発会社</a></h2>
-<p>
-  木本システム株式会社は、東京都で基本月額30万円でシステム開発できるシステム開発会社です。
-</p>
-<h3>東京都港区のシステム開発会社</h3>
-<p>
-  木本システムは東京都港区で営業するシステム開発会社です。Webシステム開発と業務システム開発を行っています。<a href="/achieve.html">開発実績</a>もご覧ください。
-</p>
-<h3>基本月額は30万円</h3>
-<p>
-  システム開発サービスの基本月額は30万円です。
-</p>
-<p>
-  基本月額30万円に、ドメイン年額費用、サーバー月額代金、メール送信サービスなど、すべてを含めて月額50万円以下に抑えることが可能です。
-</p>
-<p>
-  基本月額30万円には、開発費用と運用保守の費用が含まれています。運用開始後、システム障害が起こった場合は、その日のうちに対応可能です。
-</p>
-<p>
-  最短契約期間は、2ヵ月です。
-</p>
-<p>
-  お客様が開発したいシステムのヒアリングを行いシステム開発の期間を見積もります。主要機能が5個以内の、小規模なシステムであれば、3ヵ月、それ以上の中規模なシステムであれば、6ヵ月～1年が目安です。
-</p>
-<p>
-  お問い合わせをいただけると、簡易的な見積もりをいたします。
-</p>
-<h3>資格がある技術者によるペア開発</h3>
-<p>
-  開発マネージャーとシステム開発者のペア開発です。システム開発者の開発時間の目安は、1日3時間、週4日です。
-</p>
-<p>
-  システム開発者は「基本情報技術者」以上の情報資格を持ち、データベースとプログラムが扱える基本的な技術を持っている技術者が担当します。
-</p>
-<p>
-  開発マネージャーは、データベースとシステムの初期構築に加わり、定期的にシステムの健全性・保守性をチェックします。
-</p>
-<p>
-  詳細は以下をご覧ください。
-</p>
-<ul>
-  <li><a href="/blog/20200702071557.html">基本月額30万円のWebシステム開発・業務システム開発</a></li>
-</ul>
+    <style>
+  .bottom {
+    display:none;
+  }
+</style>
+<div class="achieve">
+  <div class="page_top_basic">
+    <h2>技術情報</h2>
+    <div class="inside">
+      <div class="description">
+        木本システム株式会社の技術情報<br>
+      </div>
+    </div>
+  </div>
+  <h3>Webシステム開発</h3>
+  
+  <div class="inside">
+    <ul>
+      <li><a href="/blog/20200802082056.html">WebフレームワークMojoliciousを使ったWebシステム開発</a></li>
+    </ul>
+  </div>
+<div>
 
-</div></div>
   </div>
   <div class="bottom">
     <!-- bottom -->
@@ -164,10 +141,8 @@ $(function() {
 
   <div class="footer_content">
     <ul>
-      <li><a href="/system-devel.html">システム開発</a></li>
-      <li><a href="/pgoramming-lessen.html">プログラミングレッスン</a></li>
-      <li><a href="/achieve.html">開発実績</a></li>
       <li><a href="/corporate.html">会社情報</a></li>
+      <li><a href="/achieve.html">開発実績</a></li>
       <li><a href="/message.html">代表挨拶</a></li>
       <li><a href="/area.html">対応エリア</a></li>
       <li><a href="/recruit.html">採用情報</a></li>

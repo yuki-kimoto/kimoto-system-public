@@ -296,16 +296,14 @@
   .index_service_main a,.index_service_main a:visited {
     display:block;
     width:100%;
-    padding:40px 15px;
-    font-size:25px;
+    padding:30px 15px;
+    font-size:18px;
     font-weight:bold;
     text-align:center;
-    color:#303022;
     background:white;
     box-shadow:0 2px 5px rgba(0,0,0,.14);
     line-height:2;
     letter-spacing:2px;
-    color:#FFAF26;
   }
   .index_service_main_title {
     font-size:16px;
@@ -1093,7 +1091,7 @@
     letter-spacing:1px;
   }
   .blog h4 {
-    font-size:20px;
+    font-size:18px;
   }
   .blog .inside {
     max-width:860px;
