@@ -1053,6 +1053,16 @@
   .blog h2 {
     background:white;
     color:#333;
+    font-size:24px;
+    letter-spacing:1px;
+  }
+  .blog h3 {
+    font-size:19px;
+    border-top:4px solid #2E75B6;
+    padding:20px 0px 18px 18px;
+    letter-spacing:1px;
+    margin:50px 0 20px 0;
+    background:#F5F5F5;
   }
   .blog ul {
     margin-top:15px;
@@ -1079,12 +1089,14 @@
   }
   .blog p {
     margin:20px 0;
+    line-height:1.9;
+    letter-spacing:1px;
   }
   .blog h4 {
     font-size:20px;
   }
   .blog .inside {
-    max-width:1080px;
+    max-width:860px;
   }
 
   /* よくある質問 FAQ */
