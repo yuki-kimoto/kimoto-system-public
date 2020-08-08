@@ -27,7 +27,8 @@
   });
 </script>
 
-<title>技術情報 - Perlシステム開発の木本システム株式会社 Webシステム開発・業務システム開発</title>
+<title>Webアプリケーションのセキュリティ対策 - Perlシステム開発の木本システム株式会社 Webシステム開発・業務システム開発</title>
+<meta name="description" content="Webアプリケーションのセキュリティ対策です。">
   </head>
   <body>
     <div class="container">
@@ -78,36 +79,49 @@ $(function() {
 
   </div>
   <div class="middle">
-    <style>
-  .bottom {
-    display:none;
-  }
-</style>
-<div class="achieve">
-  <div class="page_top_basic">
-    <h2>技術情報</h2>
-    <div class="inside">
-      <div class="description">
-        木本システム株式会社の技術情報<br>
-      </div>
-    </div>
-  </div>
-  <h3>Webシステム開発</h3>
-  
-  <div class="inside">
-    <ul>
-      <li><a href="/blog/20200802082056.html">WebフレームワークMojoliciousを使ったWebシステム開発</a></li>
-    </ul>
-  </div>
-  <h3>セキュリティ</h3>
-  <div class="inside">
-    <ul>
-      <li><a href="/blog/20200809075019.html">Webアプリケーションのセキュリティ対策</a></li>
-    </ul>
-  </div>
-  
-<div>
+    <div class="blog">
+<div class="inside"><h2><a href="/blog/20200809075019.html">Webアプリケーションのセキュリティ対策</a></h2>
+<p>
+  Webアプリケーションのセキュリティ対策です。
+</p>
+<h3>サーバーのセキュリティ対策</h3>
+<p>
+  サーバーに関するセキュリティ対策です。
+</p>
+<h4>SSHのポート番号はデフォルトの22番から変更</h4>
+<p>
+  SSHのポート番号はデフォルトの22番ポートは、ポートスキャニングによって、クラッカーによって、狙われていますので、それ以外のポート番号に変更します。
+</p>
+<h4>ファイアーウォールで必要なポートだけに限定</h4>
+<p>
+  サーバーの受け入れポートを、ファイアーウォールでWebアプリケーション開発で必要とするポートだけに限定します。
+</p>
+<h4>HTTPSによるWebサイトの表示</h4>
+<p>
+  HTTPではなくHTTPSを使って、Webサイトを表示できるようにサーバーを構成します。
+</p>
+<h3>データベースのセキュリティ対策</h3>
+<p>
+  データベースのセキュリティ対策です。
+</p>
+<h4>WebアプリケーションのSQL実行権限を限定</h4>
+<p>
+  WebアプリケーションのSQL実行権限をinsert,update,delete,selectに限定します。
+</p>
+<h4>SQLインジェクション対策</h4>
+<p>
+  WebアプリケーションのSQLの実行は、SQLインジェクション対策として、プレースホルダーを使って実行します。
+</p>
+<h3>JavaScriptのセキュリティ対策</h3>
+<p>
+  JavaScriptのセキュリティ対策です。
+</p>
+<h4>任意の文字列で動的にJavaScriptを生成しない</h4>
+<p>
+  プログラムの中で、任意の文字列でJavaScriptを動的に生成していないかを、コードレビューに含めています。
+</p>
 
+</div></div>
   </div>
   <div class="bottom">
     <!-- bottom -->
