@@ -1101,6 +1101,38 @@
     max-width:860px;
   }
 
+  .blog table {
+    border-collapse: collapse;
+    margin-left:15px;
+    width:100%;
+    max-width:1080px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:15px;
+    margin-bottom:50px;
+    margin-top:50px;
+  }
+  
+  .blog table tr {
+    border:1px solid #83b0de;
+    border-right:none;
+    border-left:none;
+  }
+
+  .blog table th {
+    padding:7px;
+    background:#dbedff;
+    font-weight:bold;
+    padding:20px 20px;
+    font-size:14px;
+    color:#000;
+  }
+
+  .blog table td {
+    padding:7px;
+    padding:20px 20px;
+  }
+
   /* よくある質問 FAQ */
   .faq_item {
     max-width:1080px;
