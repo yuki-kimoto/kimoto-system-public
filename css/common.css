@@ -192,10 +192,10 @@
     display:flex;
   }
   .page_top_left_fix_image  .left {
-    width:250px;
+    display:none;
   }
   .page_top_left_fix_image  .right {
-    width:calc(100% - 250px);
+    width:100%;
   }
   .page_top_left_fix_image  .right > h2 {
     padding-top:30px;
@@ -1343,7 +1343,7 @@
     flex-wrap:wrap;
   }
   .page_top_left_fix_image .left {
-    width:100%;
+    display:none
   }
   .page_top_left_fix_image .right {
     width:100%;
