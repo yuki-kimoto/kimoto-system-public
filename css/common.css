@@ -43,7 +43,7 @@
     
     /* 一時的 */
     padding-top:30px;
-    background: #1E65A6;
+    background: #70AD47;
   }
   h2 a, h2 a:visited {
     color:inherit;
@@ -51,7 +51,7 @@
   
   /* ページトップ基本 */
   .page_top_basic {
-    background: #1E65A6;
+    background: #70AD47;
   }
   
   .page_top_basic .description {
@@ -185,7 +185,7 @@
   
   /* 左側に写真を表示するためのページトップ領域で使うコンポーネント */
   .page_top_left_fix_image {
-    background: #1E65A6;
+    background: #70AD47;
   }
   .page_top_left_fix_image .inside {
     color:white;
@@ -209,7 +209,7 @@
     font-size: 16px;
     padding-top:30px;
     padding-bottom:30px;
-    background: #1E65A6;
+    background: #70AD47;
     padding-top:15px;
   }
   .page_top_left_fix_image  img {
@@ -219,7 +219,7 @@
 
   /* タイトル部分に写真を表示するページトップ領域で使うコンポーネント */
   .page_top_title_image {
-    background: #1E65A6;
+    background: #70AD47;
     text-align:center;
   }
   .page_top_title_image h2 {
@@ -237,7 +237,7 @@
     font-size: 16px;
     padding-top:30px;
     padding-bottom:30px;
-    background: #1E65A6;
+    background: #70AD47;
     padding-top:30px;
   }
   
@@ -824,7 +824,7 @@
     text-align:center;
     color:white;
     font-weight:bold;
-    background: #1E65A6;
+    background: #70AD47;
     background-size:4px 4px;
     padding:13px 10px;
     letter-spacing:1px;
@@ -1335,7 +1335,7 @@
 
   /* 左側に写真を表示するためのページトップ領域で使うコンポーネント */
   .page_top_left_fix_image {
-    background: #1E65A6;
+    background: #70AD47;
   }
   .page_top_left_fix_image .inside {
     color:white;
