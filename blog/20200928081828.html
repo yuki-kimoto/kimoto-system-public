@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/images/perlri-favicon.png">
+<link rel="stylesheet" type="text/css" href="/css/common.css">
+
+<script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+<link  type="text/css" rel="stylesheet" href="/js/google-code-prettify/prettify.css"/>
+<script>
+  $(function(){
+    // google code prettifyの有効化
+    $("pre").addClass("prettyprint");
+    function init(event){
+      prettyPrint();
+    }
+    if(window.addEventListener)window.addEventListener("load",init,false);
+    else if(window.attachEvent)window.attachEvent("onload",init);
+    
+    $(".to-top").click(function() {
+      // ページの一番上までスクロールさせます。
+      $('body, html').animate({scrollTop: 0}, 300, 'linear');;
+    });
+  });
+</script>
+
+<title>git branch - ブランチを作成する - Webシステム開発サービス - Perl総合研究所</title>
+<meta name="description" content="ブランチを作成するには「git branch」コマンドを使用します。">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <script>
+$(function() {
+  $(window).on('resize', function () {
+    if ($(window).width() > 960) {
+      $('.header_menu').show();
+      $('.header_menu').css('display', 'flex');
+    }
+    else if ($(window).width() <= 960) {
+      $('.header_menu').hide();
+    }
+  });
+});
+</script>
+
+<!-- header -->
+<div class="header_content">
+  <div class="header_site_title">
+    <a href="/"><img src="/images/perlri-logo.png" alt="Webシステム開発サービス - Perl総合研究所"></a>
+  </div>
+  <div class="header_company_name">
+    <h1>Perl総合研究所の<br>Webシステム開発サービス</h1>
+  </div>
+  <div class="header_menu_button" onclick="$('.header_menu').toggle()">
+    <img src="/images/header/menu-icon.png">
+  </div>
+  <ul class="header_menu">
+    <li><a href="/achieve.html">開発実績</a></li>
+    <li><a href="/example.html">開発事例</a></li>
+    <li><a href="/technology.html">技術情報</a></li>
+    <li><a href="/area.html">対応エリア</a></li>
+    <li><a href="/mail.html">問い合わせ</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="main">
+        <div class="content">
+          <div class="entry">
+  <div class="top">
+    <!-- top -->
+
+  </div>
+  <div class="middle">
+    <div class="blog">
+<div class="inside"><h2><a href="/blog/20200928081828.html">git branch - ブランチを作成する</a></h2>
+<p>
+  ブランチを作成するには「git branch」コマンドを使用します。
+</p>
+<pre>
+git branch ブランチ名
+</pre>
+<h3>ブランチ名</h3>
+<p>
+  ブランチ名には、開発作業がわかる簡潔な名前を付けることをお勧めしています。
+</p>
+<p>
+  商品の変更機能を追加するための開発ブランチの場合の例。
+</p>
+<pre>
+git branch goods_update
+</pre>
+<p>
+  ポイントは、他のブランチと区別ができることと、わかりやすいことです。
+</p>
+<p>
+  大きなプロジェクトの場合は、作業者名が入ったりなど、もう少し長くなるかもしれません。
+</p>
+<h3>ブランチとは何ですか?</h3>
+<p>
+  ブランチとは、開発を分岐させることができる機能のことです。たとえば、新しい機能を追加、バグを修正、バージョン2のための保守、などに利用されます。bleadは、ここではメインのブランチで「bread leading(ブレッドの先頭)」という意味だと考えてください。
+</p>
+<pre>
+o - o - o - o - o - o - o blead
+        |     |
+        |     - o - o fix_bug
+        |
+        - o - o - o - o v2
+</pre>
+<p>
+  内部実装としては、Gitの場合のブランチとは、単にコミットの先頭への参照のことです。コミットを分岐させることがブランチの作成で、コミットが分岐して伸びていくその先頭がブランチです。
+</p>
+<p>
+  Gitでは、ブランチは参照として作成されるので、ブランチ全体のコピーが発生するということはなく、高速にブランチの作成を行うことができます。
+</p>
+<p>
+  「git branch」を実行した直後は、こんな感じです。
+</p>
+<pre>
+# git branch 直後
+o - o - o  &lt;- blead
+           &lt;- fix_bug
+</pre>
+<p>
+  ブランチがコピーされることはなく、伸びているoの先頭のコミットIDに、fix_bugという名前が付くだけです。これが、参照という意味です。<a href="https://tutorial.perlzemi.com/blog/20180214151861.html">Perlのリファレンス</a>や<a href="https://c.perlzemi.com/">C言語</a>のポインタを理解していれば、比較的理解しやすいかと思います。
+</p>
+<p>
+  ひとつfix_bugでコミットを進めてみましょう。次のようになります。
+</p>
+<pre>
+# fix_bugでコミットを進める
+
+o - o - o   &lt;- blead
+        |
+        - o &lt;- fix_bug
+</pre>
+<h3>他のコミットやブランチやタグを元にしてブランチを作成する</h3>
+<p>
+  他のコミットIDやブランチやタグを元にしてブランチを作成することもできます。ブランチはリモートブランチでもローカルブランチでもOKです。リモートブランチは単に、リモートリポジトリのブランチという意味です。
+</p>
+<pre>
+git branch ブランチ名 元にするブランチ名など
+</pre>
+<p>
+  他のコミットやブランチやタグを元にしてブランチを作成するサンプルです。
+</p>
+<pre>
+# コミットを元にする
+git branch new_branch 7e4fd9251ed97e69274121a13d27f75c96ae7c61
+
+# 他のブランチを元にする
+git branch new_branch fix_bug
+
+# リモートブランチを元にする
+git branch new_branch origin/fix_bug
+
+# タグを元にする
+git branch new_branch v2.1
+</pre>
+
+</div></div>
+  </div>
+  <div class="bottom">
+    
+  </div>
+</div>
+
+        </div>
+        <div class="side">
+          <!-- side -->
+
+        </div>
+      </div>
+      <div class="footer">
+        <!-- footer -->
+
+  <div class="footer_content">
+    <ul>
+      <li><a href="/system-devel.html">Webシステム開発</a></li>
+      <li><a href="/achieve.html">開発実績</a></li>
+      <li><a href="/example.html">開発事例</a></li>
+      <li><a href="/area.html">対応エリア</a></li>
+      <li><a href="/programming-lesson.html">システム内製化</a></li>
+      <li><a href="http://www.perlri.com/">Perl総合研究所</a></li>
+  </div>
+
+<div style="text-align:center;">
+  <a href="/mail.html">問い合わせ © Perl総合研究所</a>
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>
