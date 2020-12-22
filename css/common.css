@@ -69,26 +69,74 @@
   h3 {
     font-size:24px;
     text-align:center;
-    margin:70px 0 40px 0;
+    padding:70px 0 40px 0;
     letter-spacing:1px;
   }
   
-  /* footer */
   .footer {
-    font-size:15px;
-    background:#F2F2F2;
+    width:100%;
+    margin:0 auto;
+    background:white;
     text-align:center;
-    padding:20px 0 17px 0;
-    color:#787890;
-    font-size:16px;
+    color:white;
+    font-size:13px;
   }
-  .footer a, .footer a:visited {
-    color:#787890;
+
+  .footer .what_is_this_site {
+    width:100%;
+    padding:25px 0;
+    font-size:16px;
+    background:#fafafa;
+  }
+  .footer .what_is_this_site b {
+    padding-left:3px;
+    padding-right:3px;
+    font-size:101%;
+  }
+  .footer .what_is_this_site ul {
+  }
+  .footer .what_is_this_site li {
+    list-style:none;
+  }
+  .footer .what_is_this_site img {
+    width:100%;
+    max-width:110px;
+    margin-bottom:15px;
+  }
+  
+  .inside {
+    width:1080px;
+    margin:0 auto;
+  }
+  /* footer */
+  .footer .perlri_link img {
+    width:105px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+  }
+  .footer .perlri_link a, .footer .perlri_link a:visited {
+    color:white;
+    display:block;
+    height:100%;
+    padding:28px 0 25px 0;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+    background:#70AD47;
+    letter-spacing:1px;
+    font-size:18px;
+    cursor:pointer;
+    text-decoration:underline;
+  }
+  .footer .perlri_link a:hover {
+    opacity:0.8;
   }
   
   /* container */
   .container {
-    background:#F8F9FA;
   }
   
   /* main */
@@ -595,6 +643,7 @@
   /* 開発実績 */
   .achieve {
     padding-bottom:50px;
+    background:#F8F9FA;
   }
   .achieve h4 {
     font-size:18px;
@@ -1047,26 +1096,25 @@
   
   /* ブログ記事 */
   .blog {
-    margin-top:30px;
-    padding:30px 0;
-    margin:0 auto;
     background:white;
   }
-  .blog h2 {
-    background:white;
-    color:#333;
-    font-size:24px;
+  .blog p {
+    max-width:980px;
+    margin:20px auto;
+    line-height:1.9;
     letter-spacing:1px;
   }
+  .blog h2 {
+  }
   .blog h3 {
-    font-size:19px;
-    border-top:4px solid #2E75B6;
+    font-size:26px;
     padding:20px 0px 18px 18px;
     letter-spacing:1px;
     margin:50px 0 20px 0;
-    background:#F5F5F5;
   }
   .blog ul {
+    max-width:980px;
+    margin:20px auto;
     margin-top:15px;
   }
   .blog li {
@@ -1089,19 +1137,15 @@
     text-align:center;
     background:#2E75B6;
   }
-  .blog p {
-    margin:20px 0;
-    line-height:1.9;
-    letter-spacing:1px;
-  }
   .blog h4 {
+    max-width:980px;
+    margin:0 auto;
     font-size:18px;
-  }
-  .blog .inside {
-    max-width:860px;
   }
 
   .blog table {
+    max-width:1080px;
+    margin:0 auto;
     border-collapse: collapse;
     margin-left:15px;
     width:100%;
@@ -1207,10 +1251,12 @@
 
   /* トップページ 会社案内 */
   .footer_content {
-    padding:30px 0 30px 0;
+    padding:30px 0 15px 0;
+    background:#333;
+    font-size:15px;
   }
   .footer_content a, .footer_content a:visited {
-    color:#787890;
+    color:white;
     display:block;
   }
   .footer_content ul {
@@ -1224,16 +1270,6 @@
     font-size:15px;
     line-height:1.8;
   }
-  .footer_content b {
-    letter-spacing:2px;
-    margin-bottom:5px;
-    font-size:105%;
-    display:block;
-  }
-  .footer_content a:hover {
-    opacity:0.8;
-  }
-
 
 /* Tablet and Smart phone */
 @media only screen and (max-width:960px) {
