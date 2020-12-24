@@ -490,12 +490,12 @@
   }
   .index-mitumori-tel-number {
     font-size:40px;
-    border-bottom:1px dashed #ffab36;
+    border-bottom:1px dashed #65c639;
     display:inline-block;
     padding:5px 5px 0px 5px;
   }
   .index-mitumori-tel-number a {
-    color:#FFAF26;
+    color:#65c639;
     letter-spacing:8px;
     font-size:48px;
   }
@@ -913,11 +913,11 @@
   }
   /* メールフォーム */
   .mail-form {
-    background:#fff6e6;
+    background:#F8F9FA;
     padding-bottom:30px;
   }
   .mail-form h2 {
-    background: #fcae28;
+    background: #f32097;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
@@ -945,7 +945,7 @@
     width:100%;
     padding:10px 10px;
     font-size:20px;
-    border:1px solid #e3c791;
+    border:1px solid #f5b2df;
   }
   .mail-form input[type=radio] {
     display:none;
@@ -983,11 +983,11 @@
     min-height:400px;
     font-size:20px;
     padding:10px 10px;
-    border:1px solid #e3c791;
+    border:1px solid #f5b2df;
   }
   .mail-form button {
     width:100%;
-    background:#F5A41B;
+    background:#FF33A1;
     color:white;
     border:none;
     font-size:27px;
