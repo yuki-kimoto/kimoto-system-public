@@ -27,7 +27,7 @@
   
   /* コンテンツを表示する中心の領域のデフォルト */
   .inside {
-    max-width:1310px;
+    max-width:860px;
     margin:0 auto;
     padding:0 16px;
   }
@@ -225,9 +225,6 @@
     opacity:0.8;
   }
   
-  .index {
-  }
-  
   /* 左側に写真を表示するためのページトップ領域で使うコンポーネント */
   .page_top_left_fix_image {
     background: #70AD47;
@@ -324,191 +321,6 @@
     background:white;
     box-shadow:0 2px 5px rgba(0,0,0,.14);
     height:100%;
-  }
-
-  /* トップページ サービスメイン */
-  .index_service_main {
-    padding:50px 0;
-    padding-bottom:50px;
-  }
-  .index_service_main h3 {
-  }
-  .index_service_main ul {
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .index_service_main li {
-    margin: 0 auto;
-    margin-bottom:20px;
-  }
-  .index_service_main a,.index_service_main a:visited {
-    display:block;
-    width:100%;
-    padding:30px 15px;
-    font-size:18px;
-    text-align:center;
-    background:white;
-    box-shadow:0 2px 5px rgba(0,0,0,.14);
-    line-height:2;
-    letter-spacing:2px;
-  }
-  .index_service_main_title {
-    font-size:16px;
-    font-weight:bold;
-  }
-  .index_service_main a, .index_service_main a:visited  {
-    color:inherit;
-  }
-
-  /* トップページ サービス */
-  .index_service {
-    padding:50px 0;
-    padding-bottom:50px;
-  }
-  .index_service h3 {
-  }
-  .index_service ul {
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .index_service li {
-    margin: 0 auto;
-    margin-bottom:20px;
-  }
-  .index_service a,.index_service a:visited {
-    display:block;
-    width:100%;
-    padding:30px 15px;
-    font-size:16px;
-    text-align:center;
-    color:#333;
-    background:white;
-    box-shadow:0 2px 5px rgba(0,0,0,.14);
-  }
-  .index_service_title {
-    font-size:16px;
-    font-weight:bold;
-  }
-
-  /* トップページ サービス */
-  .index_why_perl {
-    padding:30px 0 10px 0;
-    padding-bottom:30px;
-    border-bottom:1px solid #ddd;
-  }
-  .index_why_perl_check {
-    color:#3159D5;
-    font-size:105%;
-  }
-  .index_why_perl h3 {
-    text-align:center;
-    margin-bottom:20px;
-    letter-spacing:2px;
-  }
-  .index_why_perl p {
-    line-height:2;
-    font-size:17px;
-  }
-  .index_why_perl ul {
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .index_why_perl li {
-    margin-left:10px;
-    margin-right:10px;
-    margin-bottom:10px;
-    border:1px solid #ddd;
-  }
-  .index_why_perl a,.index_why_perl a:visited {
-    padding:27px 25px;
-    display:block;
-    width:100%;
-    padding:30px 15px;
-    font-size:20px;
-    text-align:center;
-    color:#333;
-    background:white;
-  }
-  .index_why_perl_title {
-    font-size:25px;
-    font-weight:bold;
-  }
-  
-  /* トップページ ニュース */
-  .index_news {
-    padding:50px 0;
-  }
-  .index_news table {
-    max-width:800px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:15px;
-  }
-  .index_news th {
-    white-space:nowrap;
-    padding:15px;
-    text-align:left;
-  }
-  .index_news td {
-    padding:15px;
-  }
-  
-  /* トップページ 見積もり */
-  .index-mitumori {
-    border-top:1px solid #eeeeef;
-    padding-top:60px;
-    padding-bottom:60px;
-  }
-  .index-mitumori-button {
-    text-align:center;
-  }
-  .index-mitumori-button a {
-    display:block;
-    background:#FFAF26;
-    color:white;
-    font-size:32px;
-    padding:25px 0;
-    border-radius:5px;
-    margin-bottom:25px;
-    max-width:650px;
-    margin-left:auto;
-    margin-right:auto;
-    letter-spacing:5px;
-  }
-  .index-mitumori-tel-message {
-    text-align:center;
-    color:#444;
-    padding:10px 0 0 0;
-    letter-spacing:3px;
-    font-size:18px;
-  }
-  .index-mitumori-tel {
-    text-align:center;
-  }
-  .index-mitumori-tel-number {
-    font-size:40px;
-    border-bottom:1px dashed #65c639;
-    display:inline-block;
-    padding:5px 5px 0px 5px;
-  }
-  .index-mitumori-tel-number a {
-    color:#65c639;
-    letter-spacing:8px;
-    font-size:48px;
-  }
-  .index-mitumori-jikan {
-    text-align:center;
-    color:#444;
-    padding:10px;
-    letter-spacing:1px;
-    font-size:17px;
-  }
-  .index-mitumori-area {
-    text-align:center;
-    color:#444;
-    padding:10px;
-    letter-spacing:1px;
-    font-size:17px;
   }
 
   /* Perl システム開発の理由 */
@@ -635,6 +447,51 @@
     vertical-align:2px;
     font-size:20px;
     padding:3px;
+  }
+
+  /* トップページ */
+  .index {
+    padding-bottom:50px;
+    background:#F8F9FA;
+  }
+  .index h4 {
+    font-size:18px;
+    font-weight:bold;
+    padding:6px 0px 4px 5px;
+    letter-spacing:0.5px;
+    margin:15px 0 5px 0;
+  }
+  .index p {
+    font-size:16px;
+    color:#111;
+    margin:5px 0;
+    line-height:1.9;
+  }
+
+  .index ul {
+  }
+  .index li {
+    width:100%;
+    border:1px solid #ddd;
+    margin:5px auto;
+    background:white;
+    max-width:560px;
+  }
+  .index li a {
+    display:block;
+    width:100%;
+    padding:30px;
+    color:#33f;
+    height:100%;
+    color:#2F2F22;
+    text-align:center;
+  }
+  .index li a:hover {
+    opacity:0.8;
+  }
+  .index li img {
+    vertical-align:-17px;
+    margin-right:10px;
   }
 
   /* 開発実績 */
@@ -1048,6 +905,7 @@
   .achieve_entry {
     padding:0;
     margin:0 auto;
+    padding-bottom:50px;
   }
   .achieve_entry h3 {
   }
@@ -1356,28 +1214,6 @@
     width:50%;
   }
 
-  /* トップページ 見積もり */
-  .index-mitumori-button a {
-    font-size:26px;
-    letter-spacing:3px;
-  }
-  .index-mitumori-tel-message {
-    letter-spacing:0;
-  }
-  .index-mitumori-tel {
-  }
-  .index-mitumori-tel-number {
-    font-size:26px;
-    letter-spacing:3px;
-  }
-  .index-mitumori-tel-number a {
-    font-size:30px;
-    letter-spacing:3px;
-  }
-  .index-mitumori-jikan {
-    letter-spacing:0;
-  }
-
   /* 左側に写真を表示するためのページトップ領域で使うコンポーネント */
   .page_top_left_fix_image {
     background: #70AD47;
@@ -1406,14 +1242,6 @@
     padding-top:5px;
   }
   
-  /* トップページ サービス */
-  .index_service li {
-    width:100%;
-    margin:10px auto;
-  }
-  .index .page_description {
-    margin-top:5px;
-  }
   .achieve li {
     width:100%;
   }
