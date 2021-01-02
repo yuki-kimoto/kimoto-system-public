@@ -7,6 +7,26 @@
     .left
     .right
   */
+
+  .youtube_block {
+    width:calc(100% - 30px);
+    max-width:560px;
+    margin:0 auto;
+  }
+  .youtube {
+    position: relative;
+    width: 100%;
+    margin:0 auto;
+    padding-top: 56.25%;
+  }
+  .youtube iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
   
   /* all */
   * {
@@ -162,6 +182,7 @@
     position:fixed;
     width:100%;
     background:white;
+    z-index:100;
   }
   .header_content {
     margin:0 auto;
