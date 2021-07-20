@@ -21,18 +21,11 @@ my $mail_kimoto_sysmte_customer_center = 'support@kimoto-system.co.jp';
 # Errors
 my @errors;
 
-# 会社名
-my $company_name = $q->param('company_name');
-$company_name = decode('UTF-8', $company_name);
-unless (length $company_name) {
-  push @errors, "会社名を入力してください。";
-}
-
-# 担当者様名
+# お名前
 my $staff_name = $q->param('staff_name');
 $staff_name = decode('UTF-8', $staff_name);
 unless (length $staff_name) {
-  push @errors, "担当者様名を入力してください。";
+  push @errors, "お名前を入力してください。";
 }
 
 # メールアドレス
@@ -69,12 +62,11 @@ my $res_data = {};
 unless (@errors) {
 
   # Mail title
-  my $subject = "【お問い合わせ】${company_name} ${staff_name}様";
+  my $subject = "【お問い合わせ】${staff_name}さん";
 
   # Mail body
   my $mail_body = <<"EOS";
-会社名: $company_name
-担当者様名: $staff_name
+お名前: $staff_name
 メールアドレス: $email
 電話番号: $tel
 お問い合わせ内容
@@ -106,12 +98,11 @@ else {
   $res_data->{success} = 1;
   
   # 自動返信メール
-  my $subject = 'お問い合わせ内容 - Perl システム開発の木本システム株式会社';
+  my $subject = 'お問い合わせ内容 - Perl総合研究所';
   my $mail_body = <<"EOS";
 お問い合わせを以下の内容で受け付けました。
 
-会社名: $company_name
-担当者様名: $staff_name
+お名前: $staff_name
 メールアドレス: $email
 電話番号: $tel
 お問い合わせ内容:
@@ -123,7 +114,7 @@ $message
 内容を確認後、ご連絡差し上げます。
 
 ------------------------------------------------------------
-木本システム株式会社
+Perl総合研究所
 
 https://kimoto-system.co.jp/
 

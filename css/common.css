@@ -193,7 +193,8 @@
   /* tags */
   .header_site_title {
     width:180px;
-    padding-left:10px;
+    padding-left:19px;
+    padding-top:4px;
   }
   .header_site_title a {
     display:block;
@@ -204,14 +205,13 @@
   .header_company_name {
     width:calc(100% - 180px - 115px * 5);
     background:white;
-    padding-top:10px;
+    padding-top:17px;
     padding-left:34px;
     line-height:1.4;
   }
   .header_company_name h1 {
-    font-size:16px;
     color:#666;
-    font-size:14px;
+    font-size:18px;
   }
   .header_company_name p {
     display:block;
@@ -792,12 +792,10 @@
     padding-bottom:30px;
   }
   .mail-form h2 {
-    background: #f32097;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
-    color:white;
     padding-top:23px;
     padding-bottom:20px;
   }
@@ -820,7 +818,7 @@
     width:100%;
     padding:10px 10px;
     font-size:20px;
-    border:1px solid #f5b2df;
+    border:1px solid #609D37;
   }
   .mail-form input[type=radio] {
     display:none;
@@ -851,14 +849,14 @@
     width:100%;
     padding:10px 10px;
     font-size:20px;
-    border:1px solid #e3c791;
+    border:1px solid #609D37;
   }
   .mail-form textarea {
     width:100%;
     min-height:400px;
     font-size:20px;
     padding:10px 10px;
-    border:1px solid #f5b2df;
+    border:1px solid #609D37;
   }
   .mail-form button {
     width:100%;
@@ -898,6 +896,38 @@
     color:#333;
     margin-bottom:10px;
   }
+
+  /* トップページ 見積もり */
+  .mail-form-tel {
+    text-align:center;
+    margin:30px auto;
+  }
+  .mail-form-tel-button a {
+    font-size:26px;
+    letter-spacing:3px;
+  }
+  .mail-form-tel-title {
+    font-size:20px;
+    font-weight:bold;
+    margin-top:30px;
+  }
+  .mail-form-tel-message {
+    letter-spacing:0;
+  }
+  .mail-form-tel-number {
+    font-size:32px;
+    letter-spacing:3px;
+  }
+  .mail-form-tel-number a {
+    font-size:42px;
+    letter-spacing:3px;
+    color:#00AA77;
+  }
+  .mail-form-tel-jikan {
+    letter-spacing:0;
+  }
+
+
   .footer {
     margin-top:0;
   }
