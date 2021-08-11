@@ -72,6 +72,7 @@
   /* ページトップ基本 */
   .page_top_basic {
     background: #70AD47;
+    padding-bottom:30px;
   }
   
   .page_top_basic .description {
